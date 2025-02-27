@@ -1,10 +1,9 @@
-# Implementation Guide
+# คู่มือการใช้งาน
 
-This section details how the UMS application can be implemented for a workplace, a building or a group of buildings.
+ส่วนนี้อธิบายรายละเอียดวิธีการใช้งานแอปพลิเคชัน UMS สำหรับสถานที่ทำงาน, อาคาร หรือกลุ่มของอาคาร
 
-Before starting, please make sure you read the Introduction and Concepts section first to understand the various elements of the UMS application:
+ก่อนที่จะเริ่มต้น, โปรดตรวจสอบให้แน่ใจว่าคุณได้อ่านส่วนของบทนำและแนวคิดก่อน เพื่อทำความเข้าใจเกี่ยวกับองค์ประกอบต่าง ๆ ของแอปพลิเคชัน UMS:
 
 {% content-ref url="../readme/concepts/" %}
-[concepts](../readme/concepts/)
+[แนวคิด](../readme/concepts/)
 {% endcontent-ref %}
-

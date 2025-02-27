@@ -1,38 +1,31 @@
-# Configuring Meters
+# การตั้งค่ามิเตอร์
 
-Once you have setup your utility types you can start adding and configuring meters.
-
-{% hint style="info" %}
-Here 'meters' refers to physical metres - that will record consumption data
-{% endhint %}
-
-
-
-Go to the Configuration section in the application and under 'Meters' you can start adding meters.
-
-
-
-The Meters section shows a list of all physical meters you have configured. You can click 'Add Item' on the top to register a new meter. You can edit each meter by clicking the 'edit' icon on the right side of each meter.
-
-
-
-## Configuring Meters
-
-When adding a new meter you need to specify the following details:
-
-1. Meter Name - a name to help you identify this meter. You can give any name you want but it should be unique. You won't be allowed to create multiple meters with the same name
-2. Description - a brief descriptoin of this meter - only for your informational purpose. This is not used by the application
-3. Meter Type - what kind of meter this is - you will pick one of the utility types you configured earlier (example: energy or water or waste)
-4. Unit - what unit this meter records data in. This is important because when data is uploaded/sent/recorded for this meter, it is assumed to be in the unit you specify here. So if your base unit is 'kwh' but the meter being configured uses btu, then specify btu as the unit.  When data gets recorded, it will automatically be converted from btu to kwh when data gets received and stored.
-5. Serving Location - what location this meter serves. When you anayze consumption data by location, this location data is used to determine what meters serve and contribute to a specific location.
-6. Tags - you can apply multiple tags to a meter. Tags need to be predefined. See the [configuring-tags.md](configuring-tags.md "mention") section for more information on how tags work.\
-   To add a new tag, click the 'Add Tag' button, then choose a tag type. \
-   Once you choose a tag type - you will be presented with a list of possible tags for that tag type. You can pick one to apply it.\
-   You can pick one tag of each type but you can add any number of tag types you want.
-7. Baselines. You can configure baseline values for each baseline that you have defined. These are daily consumption baseline values. See  the section on configuring baselines for more information
-   1. Metadata - You can configure various custom fields under the 'metadata' section. Custom fields are defined under the metadata configuration section which is in the 'Advanced' section.&#x20;
+เมื่อคุณได้ตั้งค่าประเภทสาธารณูปโภคของคุณแล้ว คุณสามารถเริ่มเพิ่มและตั้งค่ามิเตอร์ได้
 
 {% hint style="info" %}
-All changes are saved only when you hit the 'Submit' button. None of your edits are saved until you do that.
+ที่นี่ 'มิเตอร์' หมายถึงเมตรทางกายภาพ - ที่จะบันทึกข้อมูลการบริโภค
 {% endhint %}
 
+ไปที่ส่วน Configuration ในแอปพลิเคชันและใต้ 'Meters' คุณสามารถเริ่มเพิ่มมิเตอร์ได้
+
+ส่วน Meters แสดงรายการของมิเตอร์ทางกายภาพทั้งหมดที่คุณได้ตั้งค่า คุณสามารถคลิก 'Add Item' ที่ด้านบนเพื่อลงทะเบียนมิเตอร์ใหม่ คุณสามารถแก้ไขแต่ละมิเตอร์โดยคลิกที่ไอคอน 'edit' ที่ด้านขวาของแต่ละมิเตอร์
+
+## การตั้งค่ามิเตอร์
+
+เมื่อเพิ่มมิเตอร์ใหม่คุณต้องระบุรายละเอียดต่อไปนี้:
+
+1. ชื่อมิเตอร์ - ชื่อเพื่อช่วยคุณระบุมิเตอร์นี้ คุณสามารถให้ชื่อที่คุณต้องการ แต่ควรจะไม่ซ้ำกัน คุณจะไม่ได้รับอนุญาตให้สร้างมิเตอร์หลายตัวที่มีชื่อเดียวกัน
+2. คำอธิบาย - คำอธิบายสั้น ๆ ของมิเตอร์นี้ - เพื่อความสะดวกของคุณเท่านั้น แอปพลิเคชันไม่ได้ใช้ข้อมูลนี้
+3. ประเภทมิเตอร์ - มิเตอร์ประเภทไหน - คุณจะเลือกหนึ่งในประเภทสาธารณูปโภคที่คุณตั้งค่าก่อนหน้านี้ (ตัวอย่าง: พลังงาน หรือน้ำ หรือขยะ)
+4. หน่วย - หน่วยที่มิเตอร์นี้บันทึกข้อมูล สิ่งนี้สำคัญเพราะเมื่อข้อมูลถูกอัปโหลด/ส่ง/บันทึกสำหรับมิเตอร์นี้ จะถูกถือว่าอยู่ในหน่วยที่คุณระบุที่นี่ ดังนั้นถ้าหน่วยพื้นฐานของคุณคือ 'kwh' แต่มิเตอร์ที่กำลังตั้งค่าใช้ btu จึงควรระบุ btu เป็นหน่วย เมื่อข้อมูลถูกบันทึก มันจะถูกแปลงจาก btu เป็น kwh อัตโนมัติเมื่อข้อมูลถูกรับและเก็บ
+5. สถานที่ให้บริการ - สถานที่ที่มิเตอร์นี้ให้บริการ เมื่อคุณวิเคราะห์ข้อมูลการบริโภคตามสถานที่ ข้อมูลสถานที่นี้จะถูกใช้เพื่อกำหนดมิเตอร์ที่ให้บริการและสนับสนุนสถานที่เฉพาะ
+6. แท็ก - คุณสามารถใช้แท็กหลายตัวกับมิเตอร์ แท็กต้องถูกกำหนดไว้ล่วงหน้า ดูส่วน [configuring-tags.md](configuring-tags.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการทำงานของแท็ก
+   เพื่อเพิ่มแท็กใหม่ คลิกที่ปุ่ม 'Add Tag' จากนั้นเลือกประเภทแท็ก
+   เมื่อคุณเลือกประเภทแท็ก - คุณจะได้รับรายการของแท็กที่เป็นไปได้สำหรับประเภทแท็กนั้น คุณสามารถเลือกหนึ่งเพื่อนำมาใช้
+   คุณสามารถเลือกแท็กหนึ่งของแต่ละประเภท แต่คุณสามารถเพิ่มประเภทแท็กที่คุณต้องการได้ไม่จำกัด
+7. ค่าพื้นฐาน คุณสามารถตั้งค่าค่าพื้นฐานสำหรับแต่ละค่าพื้นฐานที่คุณได้กำหนด นี้คือค่าพื้นฐานการบริโภครายวัน ดูส่วนเกี่ยวกับการตั้งค่าค่าพื้นฐานสำหรับข้อมูลเพิ่มเติม
+   1. Metadata - คุณสามารถตั้งค่าฟิลด์ที่กำหนดเองต่าง ๆ ภายใต้ส่วน 'metadata' ฟิลด์ที่กำหนดเองถูกกำหนดภายใต้ส่วนการตั้งค่า metadata ซึ่งอยู่ในส่วน 'Advanced'&#x20;
+
+{% hint style="info" %}
+การเปลี่ยนแปลงทั้งหมดจะถูกบันทึกเฉพาะเมื่อคุณกดปุ่ม 'Submit' ไม่มีการแก้ไขของคุณที่จะถูกบันทึกจนกว่าคุณจะทำเช่นนั้น
+{% endhint %}

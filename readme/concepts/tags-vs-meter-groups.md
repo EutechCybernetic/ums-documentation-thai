@@ -1,15 +1,13 @@
-# Tags vs Meter Groups
+# แท็ก ประกอบกับ กลุ่มมิเตอร์
 
+ทั้งแท็กและกลุ่มมิเตอร์ช่วยให้คุณสามารถรวบรวมข้อมูลจากหลายมิเตอร์ - ดังนั้นความแตกต่างคืออะไรและเราควรใช้แท็กเมื่อไหร่และใช้กลุ่มมิเตอร์เมื่อไหร่?
 
+มีหลายที่ที่คุณสามารถเลือกใช้ได้
 
-Both tags and meter groups let you aggregate data from multiple meters - so what's the difference and when do we use tags and when do we use meter groups?
+ในตัวอย่างข้างต้นคุณสามารถสร้างกลุ่มมิเตอร์สำหรับ 'Sunbucks ชั้นล่าง' และ 'Sunbucks ชั้น 3' แล้วใช้แทน แล้วสร้างอีกหนึ่งสำหรับ 'Sunbucks' ที่รวมชั้นล่างและชั้น 3
 
-There are many places where you can choose to use either.
+ข้อดีของแท็กคือการตั้งค่าและกำหนดค่าที่ง่ายขึ้น มันยังง่ายต่อการดูและวิเคราะห์ข้อมูลในโครงสร้างแบบต้นไม้ มันให้คุณมีความสัมพันธ์ที่ชัดเจนในขณะที่กลุ่มมิเตอร์เป็นรายการแบบแบนของวัตถุ
 
-In the above example you could have created meter groups for each of 'Sunbucks Ground Floor' and 'Sunbucks 3rd Floor' and used that instead and then created another one for 'Sunbucks' that added Ground Floor and 3rd Floor.
+อย่างไรก็ตาม หากตรรกะการจัดกลุ่มของคุณไม่ได้เพียงการรวมเข้าด้วยกัน - หากคุณต้องใช้ปัจจัยการปรับขนาดหรือลบค่าการบริโภคมิเตอร์บางอย่าง คุณไม่สามารถใช้แท็กสำหรับสิ่งนั้นได้ คุณต้องใช้มิเตอร์เสมือนหรือกลุ่มมิเตอร์
 
-The advantage of tags is that its easier to setup and configure. Its also easy to view and analyze data in a tree-like structure. It gives you an explicit relationship whereas meter groups are a flat list of objects.
-
-However, if your grouping logic is not purely adding together - if you need to apply scaling factors or subtract certain meter consumption values, then you can't purely use tags for that. You need to use virtual meters or meter groups.
-
-(You could then tag that meter group subsequently)
+(คุณสามารถแท็กกลุ่มมิเตอร์นั้นในภายหลัง)

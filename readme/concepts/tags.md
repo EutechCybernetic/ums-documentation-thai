@@ -1,29 +1,28 @@
-# Tags
+# แท็ก
 
-Tags are a useful feature to organize and catalog utility consumption data in various custom and arbitrary ways. You can apply multiple tags to meters, virtual meters or meter groups. You can then analyze consumption data by tags. All meters that have the same tag will have their consumption data aggregated together. For example, if there are multiple tenants in a building and they each have mutiple meters, you can tag different meters or meter groups with the tenant name, and then analyze the consumption data based on the tenant name.
+แท็กเป็นคุณสมบัติที่มีประโยชน์ในการจัดระเบียบและจัดแคตตาล็อกข้อมูลการใช้งานสาธารณูปโภคในทางที่แตกต่างกัน คุณสามารถใช้แท็กหลายๆ อันในมิเตอร์, มิเตอร์เสมือน หรือกลุ่มมิเตอร์ คุณจึงสามารถวิเคราะห์ข้อมูลการใช้งานตามแท็ก มิเตอร์ทั้งหมดที่มีแท็กเดียวกันจะมีข้อมูลการใช้งานที่ถูกรวมกัน เช่น ถ้ามีผู้เช่าหลายคนในอาคารและแต่ละคนมีมิเตอร์หลายตัว คุณสามารถใช้แท็กในมิเตอร์หรือกลุ่มมิเตอร์ที่แตกต่างกันด้วยชื่อผู้เช่า แล้ววิเคราะห์ข้อมูลการใช้งานตามชื่อผู้เช่า
 
-In order to provide structure and ensure data is clean, you need to pre-define your tags.
+เพื่อให้มีโครงสร้างและรับรองว่าข้อมูลจะสะอาด คุณต้องกำหนดแท็กของคุณล่วงหน้า
 
-You start by defining a 'tag type' - for example 'Tenant'. You can then define multiple items under the 'Tenant' tag. You can add a tag for each tenant - 'ACME', 'Blueberry Electronics', 'Verper Stationary' etc..
+คุณเริ่มต้นด้วยการกำหนด 'ประเภทแท็ก' - เช่น 'ผู้เช่า' คุณสามารถกำหนดรายการหลายๆ อันภายใต้แท็ก 'ผู้เช่า' คุณสามารถเพิ่มแท็กสำหรับแต่ละผู้เช่า - 'ACME', 'Blueberry Electronics', 'Verper Stationary' ฯลฯ..
 
-What makes tags more interesting is that they can follow a hierarchial tree structure.
+สิ่งที่ทำให้แท็กน่าสนใจมากขึ้นคือ พวกมันสามารถปฏิบัติตามโครงสร้างต้นไม้แบบลำดับชั้น
 
-#### Tag Trees
+#### ต้นไม้แท็ก
 
-You can define tags with parent and child tags. You can create tags and subtags and sub-sub tags and keep going on. The advantage of this is that when you want to analyze consumption data for a tag, it will automatically include all sub-tags (or child tags) as well. For example, if the 'Sunbucks Coffee' tenant has 2 different shops in a commercial building, you can define a tag structure for tenants like this:
+คุณสามารถกำหนดแท็กที่มีแท็กแม่และแท็กลูก คุณสามารถสร้างแท็กและแท็กย่อยและแท็กย่อยย่อยและยังคงทำต่อไป ข้อดีของสิ่งนี้คือ เมื่อคุณต้องการวิเคราะห์ข้อมูลการใช้งานสำหรับแท็ก มันจะรวมทั้งแท็กย่อย (หรือแท็กลูก) ด้วย เช่น ถ้าผู้เช่า 'Sunbucks Coffee' มีร้าน 2 แห่งในอาคารพาณิชย์ คุณสามารถกำหนดโครงสร้างแท็กสำหรับผู้เช่าดังนี้:
 
-* Tenant
-  * Food and Beverage
+* ผู้เช่า
+  * อาหารและเครื่องดื่ม
     * Sunbucks Coffee
-      * Ground Floor
-      * 3rd Floor
+      * ชั้นล่าง
+      * ชั้น 3
     * Don Pepe
 
-You can then tag the meters as either `Tenant/Food and Beverage/Sunbucks Coffee/Ground Floor` or `Tenant/Food and Beverage/Sunbucks Coffee/3rd Floor`.
+คุณสามารถแท็กมิเตอร์เป็น `ผู้เช่า/อาหารและเครื่องดื่ม/Sunbucks Coffee/ชั้นล่าง` หรือ `ผู้เช่า/อาหารและเครื่องดื่ม/Sunbucks Coffee/ชั้น 3`.
 
-You can either analyze data for each individual meter, or if you choose to analyze data for `Tenants/Food and Beverage/Sunbucks Coffee`, data from `Ground Floor` and `3rd Floor` will autoamtically be included in it.
+คุณสามารถวิเคราะห์ข้อมูลสำหรับแต่ละมิเตอร์ หรือถ้าคุณเลือกวิเคราะห์ข้อมูลสำหรับ `ผู้เช่า/อาหารและเครื่องดื่ม/Sunbucks Coffee` ข้อมูลจาก `ชั้นล่าง` และ `ชั้น 3` จะถูกรวมเข้าไปอัตโนมัติ
 
-If you analyze data for the tag `Tenant/Food and Beverage` it will also include consumption data from `Don Pepe` tagged meters as well.
+ถ้าคุณวิเคราะห์ข้อมูลสำหรับแท็ก `ผู้เช่า/อาหารและเครื่องดื่ม` มันจะรวมข้อมูลการใช้งานจากมิเตอร์ที่มีแท็ก `Don Pepe` ด้วย
 
-Having a tree structure lets you segregate and analyze data individually or as a group.
-
+การมีโครงสร้างแบบต้นไม้ช่วยให้คุณสามารถแยกและวิเคราะห์ข้อมูลแยกหรือเป็นกลุ่ม

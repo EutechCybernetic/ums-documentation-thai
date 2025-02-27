@@ -1,318 +1,203 @@
-# Consumption Analysis Tool
+# เครื่องมือวิเคราะห์การบริโภค
 
-The consumption analysis tool gives you an interface to analyze consumption of any object (meter, group or tag) in various ways.
+เครื่องมือวิเคราะห์การบริโภคให้คุณมีส่วนต่อประสานเพื่อวิเคราะห์การบริโภคของวัตถุใด ๆ (เมตร, กลุ่ม หรือแท็ก) ในหลาย ๆ วิธี
 
 {% hint style="info" %}
-When we say 'object' we mean either a meter, virtual meter, meter group or tag
+เมื่อเราพูดถึง 'วัตถุ' เราหมายถึง เมตร, เมตรเสมือน, กลุ่มเมตร หรือแท็ก
 {% endhint %}
 
+เครื่องมือนี้สามารถเข้าถึงได้ในหลาย ๆ วิธี:
 
+1. คลิกที่เมตรภายในตัวสำรวจเมตร
+2. บนแผงด้านขวาในตัวสำรวจแท็กที่แสดงข้อมูลการบริโภคสำหรับแท็กที่เลือก
+3. สามารถเพิ่มลงในแดชบอร์ดเป็นวิดเจ็ตและปรับแต่งได้
 
-The tool can be addressed in a few ways:
-
-1. Clicking on a meter inside the meter explorer
-2. On the right side panel in the tag explorer where it shows consumption data for the selected tag(s)
-3. It can be added to a dashboard as a widget and customized
-
-The tool looks like this:
+เครื่องมือมีลักษณะดังนี้:
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-1. Details Panel - contains details about the specific object. This may or may not be visible depending on how you invoked the tool
-2. The analysis panel
-3. The date filter - you can pick a date range to analyze consumption&#x20;
-4. High level KPIs - currently shows the largest peak consumption and (if applicable) the overall deviation from the baseline
-   1. You can export the data being viewed at any time using the export button. It downloads a csv export of the data
-5. The filter panel - click this to expand the tool to show all avaialble filters
-6. [consumption-contribution-tool.md](consumption-contribution-tool.md "mention")- this is only applicable to virtual meters and meter groups.
+1. แผงรายละเอียด - มีรายละเอียดเกี่ยวกับวัตถุเฉพาะ นี้อาจจะมองเห็นหรือไม่มองเห็นขึ้นอยู่กับวิธีที่คุณเรียกใช้เครื่องมือ
+2. แผงวิเคราะห์
+3. ตัวกรองวันที่ - คุณสามารถเลือกช่วงวันที่เพื่อวิเคราะห์การบริโภค
+4. KPI ระดับสูง - ปัจจุบันแสดงการบริโภคสูงสุดและ (ถ้าเกี่ยวข้อง) ความเบี่ยงเบนโดยรวมจากเส้นฐาน
+   1. คุณสามารถส่งออกข้อมูลที่กำลังดูได้ทุกเวลาโดยใช้ปุ่มส่งออก มันจะดาวน์โหลดการส่งออก csv ของข้อมูล
+5. แผงตัวกรอง - คลิกที่นี่เพื่อขยายเครื่องมือเพื่อแสดงตัวกรองที่มีทั้งหมด
+6. [consumption-contribution-tool.md](consumption-contribution-tool.md "mention")- นี้เกี่ยวข้องเฉพาะกับเมตรเสมือนและกลุ่มเมตร
 
-## Date Ranges
+## ช่วงวันที่
 
-When picking a date range, you can either pick a relative date range or a custom date range.
+เมื่อเลือกช่วงวันที่, คุณสามารถเลือกช่วงวันที่ที่เกี่ยวข้องหรือช่วงวันที่ที่กำหนดเอง
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-01-29 at 20.58.08.png" alt="" width="369"><figcaption></figcaption></figure>
 
-When you pick a relative date range, you can select to show data for either
+เมื่อคุณเลือกช่วงวันที่ที่เกี่ยวข้อง, คุณสามารถเลือกแสดงข้อมูลสำหรับ
 
-1. Last 7 Days
-2. Last 30 Days
-3. Last 365 Days
+1. 7 วันที่ผ่านมา
+2. 30 วันที่ผ่านมา
+3. 365 วันที่ผ่านมา
 
-The date range selected will be automatic based on what you selected.
+ช่วงวันที่ที่เลือกจะเป็นอัตโนมัติตามที่คุณเลือก
 
-You can also choose 'Custom' in which case you can specify a start date and an end date.
+คุณยังสามารถเลือก 'กำหนดเอง' ในกรณีนั้นคุณสามารถระบุวันที่เริ่มต้นและวันที่สิ้นสุด
 
-First click on the start date in the calendar, and then click the end date- the calendar should auto highlight all dates in between the start date and end date
+คลิกที่วันที่เริ่มต้นในปฏิทินก่อน แล้วคลิกวันที่สิ้นสุด- ปฏิทินควรเน้นวันที่ทั้งหมดระหว่างวันที่เริ่มต้นและวันที่สิ้นสุด
 
 {% hint style="info" %}
-Comparing the current time period to the previous time period is only available if you choose a relative date range - so that the tool will know what dates for her also
+การเปรียบเทียบระยะเวลาปัจจุบันกับระยะเวลาก่อนหน้านี้สามารถใช้งานได้เฉพาะเมื่อคุณเลือกช่วงวันที่ที่เกี่ยวข้อง - ดังนั้นเครื่องมือจะทราบวันที่สำหรับเธอด้วย
 {% endhint %}
 
-## Extended Filters and Analysis
+## ตัวกรองและการวิเคราะห์ขยาย
 
-You can click on the 'filter' icon on the top right (#6 in the diagram above) to expand to the full view of the analysis interface.
+คุณสามารถคลิกที่ไอคอน 'ตัวกรอง' ที่ด้านบนขวา (#6 ในแผนภาพด้านบน) เพื่อขยายเพื่อดูส่วนต่อประสานของการวิเคราะห์เต็มรูปแบบ
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-This is similar to the earlier interface but more options are available.
+นี่คล้ายกับส่วนต่อประสานก่อนหน้านี้ แต่มีตัวเลือกเพิ่มเติม
 
+1. ความสามารถในการเปลี่ยนประเภทการแสดงผล คุณสามารถเลือกระหว่าง
+   1. แผนภูมิแท่ง (มุมมองเริ่มต้น)
+   2. แผนภูมิคอลัมน์ (แท่งวางอยู่ในแนวนอน)
+   3. แผนภูมิพื้นที่
+   4. แผนภูมิเส้น
+   5. แผนภูมิโดนัท (แผนภูมิวงกลม - ไม่เกี่ยวข้องสำหรับบางประเภทของการวิเคราะห์)
+2. แผงตัวกรองทางด้านขวาที่ให้คุณมีตัวเลือกตัวกรองเพิ่มเติม
 
+## ตัวเลือกการกรอง
 
-1. The ability to change the visualization type. You can choose between
-   1. Bar Chart (default view)
-   2. Column Chart (bars layed out horizontally)
-   3. Area Chart
-   4. Line Chart
-   5. Donut Chart (pie chart - not relevant for some types of analytics)
-2. The filter panel on the right side giving you more filter options
+แผงตัวกรองให้คุณมีช่วงของตัวเลือกการกรอง การจัดกลุ่ม และการรวมข้อมูลสำหรับข้อมูล
 
+ไม่ใช่ตัวกรองทั้งหมดที่เกี่ยวข้องเสมอ
 
+### ประเภทยูทิลิตี้
 
-## Filtering Options
+เลือกประเภทยูทิลิตี้ที่คุณต้องการวิเคราะห์
 
-The filter panel gives you a range of filtering and grouping and aggregation options for data.
+&#x20;ตัวเลือกนี้มีเฉพาะเมื่อคุณกำหนดค่าเครื่องมือจากแดชบอร์ด&#x20;
 
-Not all filters are always applicable.
+เมื่อคุณเข้าถึงเครื่องมือจากเมตรหรือแท็ก ประเภทยูทิลิตี้จะรู้แล้วดังนั้นตัวเลือกนั้นจะไม่มีในกรณีเหล่านั้น
 
+### หน่วย
 
+ขึ้นอยู่กับประเภทยูทิลิตี้ - รายการของหน่วยที่เป็นไปได้จะถูกแสดงด้วยหน่วยฐานเริ่มต้นที่เลือก
 
-### Utility Type
+คุณสามารถเปลี่ยนหน่วยที่ข้อมูลนำเสนอได้
 
-Choose which utility type you want to analyze.
-
-&#x20;This option is only available when you configure the tool from a dashboard.&#x20;
-
-When you access the tool from a meter or tag, the utility type is already known so that option is not available in those cases.
-
-
-
-### Units
-
-Based on the utility type - the list of possible units will be shown with the default base unit selected.
-
-You can change the units that the data is presented in.
-
-
-
-### Target Type
+### ประเภทเป้าหมาย
 
 {% hint style="info" %}
-This option is only available when you access the consumption anaylsis tool from a dashboard widget
+ตัวเลือกนี้มีเฉพาะเมื่อคุณเข้าถึงเครื่องมือวิเคราะห์การบริโภคจากวิดเจ็ตแดชบอร์ด
 {% endhint %}
 
-Select what kind of object you want to analyze.
+เลือกวัตถุประเภทใดที่คุณต้องการวิเคราะห์
 
-This can one of:
+นี้สามารถเป็นหนึ่งใน:
 
-1. Utility Meters
-2. Virtual Metres
-3. Meter Groups
-4. Tags
+1. เมตรยูทิลิตี้
+2. เมตรเสมือน
+3. กลุ่มเมตร
+4. แท็ก
 
-### Target
+### เป้าหมาย
 
 {% hint style="info" %}
-This option is only available when you access the consumption anaylsis tool from a dashboard widget and after you select the 'Target Type'
+ตัวเลือกนี้มีเฉพาะเมื่อคุณเข้าถึงเครื่องมือวิเคราะห์การบริโภคจากวิดเจ็ตแดชบอร์ดและหลังจากที่คุณเลือก 'ประเภทเป้าหมาย'
 {% endhint %}
 
-Once you select your target type, based on the selection you have different options.
+เมื่อคุณเลือกประเภทเป้าหมายของคุณ ขึ้นอยู่กับการเลือกคุณมีตัวเลือกที่แตกต่างกัน
 
-#### Utility Meters
+#### เมตรยูทิลิตี้
 
-If you selected 'Utility Meter' as the target type, you can now select which utility meter you want to analyze. You can select multiple utility meters as well.
+ถ้าคุณเลือก 'เมตรยูทิลิตี้' เป็นประเภทเป้าหมาย คุณสามารถเลือกเมตรยูทิลิตี้ที่คุณต้องการวิเคราะห์ คุณสามารถเลือกเมตรยูทิลิตี้หลาย ๆ ตัวด้วย
 
-#### Virtual Meters
+#### เมตรเสมือน
 
-If you selected 'Virtual Meter' as the target type, you can now select which virtual meter you want to analyze. You can select multiple virtual meters as well.
+ถ้าคุณเลือก 'เมตรเสมือน' เป็นประเภทเป้าหมาย คุณสามารถเลือกเมตรเสมือนที่คุณต้องการวิเคราะห์ คุณสามารถเลือกเมตรเสมือนหลาย ๆ ตัวด้วย
 
-#### Meter Groups
+#### กลุ่มเมตร
 
-If you selected 'Meter Group' as the target type, you can now select which group you want to analyze. You can select multiple groups to analyze as well.
+ถ้าคุณเลือก 'กลุ่มเมตร' เป็นประเภทเป้าหมาย คุณสามารถเลือกกลุ่มที่คุณต้องการวิเคราะห์ คุณสามารถเลือกกลุ่มหลาย ๆ กลุ่มเพื่อวิเคราะห์ด้วย
 
-#### Tags
+#### แท็ก
 
-If you selected 'Tag' as the target type, you can now choose a specific tag that you want to anaylze.
+ถ้าคุณเลือก 'แท็ก' เป็นประเภทเป้าหมาย คุณสามารถเลือกแท็กเฉพาะที่คุณต้องการวิเคราะห์
 
-You will first be asked to choose the tag type, and then presented with a tag tree to pick your tag.
+คุณจะถูกขอให้เลือกประเภทแท็กก่อน แล้วจึงนำเสนอต้นไม้แท็กเพื่อเลือกแท็กของคุณ
 
-You can pick multiple tags and the data shown will be from the _intersection_ of all tags.
+คุณสามารถเลือกแท็กหลาย ๆ แท็กและข้อมูลที่แสดงจะเป็นจาก _การตัดกัน_ ของทุกแท็ก
 
-For example, if you pick \`Location:Building1\` and \`System:PlugLoad\`
+ตัวอย่างเช่น ถ้าคุณเลือก \`Location:Building1\` และ \`System:PlugLoad\`
 
-The consumption will be shown for meters that have both those tags.
+การบริโภคจะถูกแสดงสำหรับเมตรที่มีแท็กทั้งสอง
 
 {% hint style="info" %}
-Sub-tags will also be considered as each tag's consumption automatically includes the consumption from sub-tags as well.
+แท็กย่อยจะถูกพิจารณาด้วย เนื่องจากการบริโภคของแต่ละแท็กจะรวมการบริโภคจากแท็กย่อยโดยอัตโนมัติ
 {% endhint %}
 
-Using the example above, the meters with the green tick mark will be selected using the combination of Location:Building1 and System:PlugLoad
+ใช้ตัวอย่างด้านบน เมตรที่มีเครื่องหมายถูกสีเขียวจะถูกเลือกโดยใช้การผสมของ Location:Building1 และ System:PlugLoad
 
 <figure><img src="../.gitbook/assets/image (19).png" alt="" width="563"><figcaption></figcaption></figure>
 
-### Comparing Multiple Items
+### การเปรียบเทียบหลายรายการ
 
-You can compare multiple items (called 'targets').
+คุณสามารถเปรียบเทียบหลายรายการ (เรียกว่า 'เป้าหมาย')
 
-To do so - first select a single target.
+ทำอย่างนี้ - เลือกเป้าหมายเดียวก่อน
 
-Once you select a target,  you will have the option to select additional targets to compare against.
+เมื่อคุณเลือกเป้าหมาย คุณจะมีตัวเลือกเพิ่มเติมเป้าหมายเพื่อเปรียบเทียบ
 
 <figure><img src="../.gitbook/assets/image (20).png" alt="" width="375"><figcaption></figcaption></figure>
 
-When you use that option - you will be presented with a screen where you can add more targets.
+เมื่อคุณใช้ตัวเลือกนั้น - คุณจะได้รับหน้าจอที่คุณสามารถเพิ่มเป้าหมายเพิ่มเติม
 
-Each target could either be a meter, virtual meter, group or tag.&#x20;
+แต่ละเป้าหมายอาจเป็นเมตร, เมตรเสมือน, กลุ่ม หรือแท็ก&#x20;
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-12 at 16.19.01.png" alt=""><figcaption></figcaption></figure>
 
-On the left pane, the list of additional targets is shown.
+บนแผงด้านซ้าย รายการของเป้าหมายเพิ่มเติมจะถูกแสดง
 
-When you click on a target, on the right pane, you can change the target by specifying a new target type and then choosing the actual target item.
+เมื่อคุณคลิกที่เป้าหมาย บนแผงด้านขวา คุณสามารถเปลี่ยนเป้าหมายโดยระบุประเภทเป้าหมายใหม่แล้วเลือกรายการเป้าหมายจริง
 
-You can add new targets by clicking the '+ Add Target' button on the top.
+คุณสามารถเพิ่มเป้าหมายใหม่โดยคลิกปุ่ม '+ Add Target' ที่ด้านบน
 
+เมื่อคุณเพิ่มเป้าหมาย วิดเจ็ตจะรีเฟรชเพื่อแสดงเป้าหมายที่อัปเดตเป็นแท่งใหม่หรือคอลัมน์หรือเวจใหม่ในแผนภูมิ
 
+### ถัง
 
-As soon as you add targets, the widget will be refreshed to show the updated targets as new bars or columns or wedges in the chart.
+โดยค่าเริ่มต้น ข้อมูลถูกเลือกตามช่วงวันที่และตัวกรองอื่น ๆ และสะสมเป็นช่วงเวลา 1 วัน
 
-### Buckets
+ช่วงเวลานี้เรียกว่า _ถัง_ มีถังอื่น ๆ ที่มีอยู่:
 
-By default, data is selected based on the date range and other filters and accumulated into increments of 1 day.
+15 นาที, 30 นาที, 1 ชั่วโมง, วัน, สัปดาห์, เดือน และปี
 
-This increment is called a _bucket_. There are other buckets available:
+ถัง **15 นาที** จะแสดงข้อมูลในช่วง 15 นาที หมายความว่าสำหรับทุก ๆ ชั่วโมง มันจะแสดง 4 ค่า:
 
-15min, 30min, 1hr, Day, Week,  Month and Year
+3:00, 3:15, 3:30, 3:45 (ถ้าเป็นช่วงเวลา 3 โมง)
 
-**15min** buckets will show data in 15min intervals. Meaning for every hour, it would show 4 values:
+ถัง **30 นาที** จะแสดงข้อมูลในช่วง 30 นาที - 3:00 และ 3:30
 
-3:00, 3:15, 3:30, 3:45 (assuming its the 3 o'clock time period)
+ถัง **วัน** จะแสดงจุดข้อมูลหนึ่งต่อวัน&#x20;
 
+ถัง **สัปดาห์** แสดงจุดข้อมูลหนึ่งสำหรับทุกสัปดาห์ โปรดทราบว่าสัปดาห์ไม่ได้หมายความว่า '7 วัน' แต่มันหมายถึง 'หนึ่งสัปดาห์'
 
+ถ้าคุณอยู่กลางสัปดาห์ (เช่น วันอังคาร) - มันจะแสดงข้อมูลจากวันอาทิตย์ถึงวันอังคารสำหรับสัปดาห์นั้น\
+สำหรับสัปดาห์ก่อนหน้านี้ มันจะแสดงข้อมูลจากวันอาทิตย์ถึงวันเสาร์
 
-**30min** buckets will similary show data in 30min intervals - 3:00 and 3:30
+ถัง **เดือน** จะจัดกลุ่มข้อมูลเป็นจุดข้อมูลหนึ่งสำหรับทุกเดือนของปี
 
-
-
-**Day** buckets will show one data point per day.&#x20;
-
-
-
-**Week** buckets show one data point for every week. Note that week doesn't mean '7 days' but it literally means 'one week'.
-
-If you are in the middle of the week (say, Tuesday) - it would show data from Sunday-Tuesday for that week.\
-For previous weeks it would show data from Sunday to Saturday.
-
-
-
-**Month** bucket groups the data into one data point for every month of the year.
-
-
-
-**Year** buckets group data for an entire year.
+ถัง **ปี** จะจัดกลุ่มข้อมูลสำหรับปีทั้งหมด
 
 {% hint style="info" %}
-If you want to see the total accumulated consumption as a single number, choosing 'Year' is a good way to do that as it will sum up all data for the entire year
+ถ้าคุณต้องการดูการบริโภคสะสมทั้งหมดเป็นตัวเลขเดียว เลือก 'ปี' เป็นวิธีที่ดีเพราะมันจะรวมข้อมูลทั้งหมดสำหรับปีทั้งหมด
 {% endhint %}
 
+เมื่อจุดข้อมูลถูกจัดกลุ่ม ข้อมูลทั้งหมดจะถูกรวมเข้าด้วยกันและแสดงในจุดข้อมูลนั้น
 
+### การจัดกลุ่มข้อมูล
 
-When data points are grouped, all the data is summed together and shown in that data point.
+นอกจากการแสดงข้อมูลตามวันที่จริง (หรือชั่วโมงหรือเดือน ฯลฯ) คุณยังสามารถวิเคราะห์ข้อมูลโดย 3 กลุ่มต่าง ๆ:
 
+1. ชั่วโมงของวัน
+2. วันของสัปดาห์
+3. วันของเดือน
 
-
-### Grouping Data
-
-Apart from showing data based on actual dates (or hours or months etc...) you can also analyze data by 3 different groups:
-
-1. Hour of Day
-2. Day Of Week
-3. Day Of Month
-
-You can choose to see the average, sum, min or max across that time range.
-
-To enable grouping, check off the 'Enable Grouping' checkbox in the filter panel.
-
-{% hint style="info" %}
-When grouping is enabled, the 'bucket' parameter is not considered as it is not relevant. Buckets are only relevant when using absolute date ranges
-{% endhint %}
-
-
-
-
-
-#### Hour of Day
-
-When you analyze data by 'Hour Of Data', within the selected date range, all the data for a given hour (ex: 12 am, 1am, 2am 3am .... 4pm 6pm ... 11pm)  are accumulated together.&#x20;
-
-This is useful to anaylze how consumption changes through out a day.
-
-For example, all the consumption that occurred from 1am-2am every day are grouped under the '1am' slot.
-
-
-
-#### Day Of Week
-
-This option will group data by the day of the week that it falls on.
-
-For example, all consumption that occurs on Mondays (12am-12am) get grouped together and aggregated under the bar for 'Monday' and so on.
-
-
-
-#### Day Of Month
-
-This will group data by the day of the month that the consumption falls under.
-
-So you would get up to 31 bars (depending on the date range you choose)
-
-
-
-### Tag Grouping
-
-In addition to grouping by various date criteria, when you select 'Tag' as your target type you have the option to furthur group by sub tags.
-
-
-
-## Examples With Grouping
-
-
-
-### Scenario 1
-
-I want to find out which hour of the day has the highest energy consumption for `Meter A`and consider the last 6 months of data for this.
-
-Filters
-
-| Filter       | Value         |
-| ------------ | ------------- |
-| Utility Type | energy        |
-| Unit         | kwh           |
-| Target Type  | Utility Meter |
-| Target       | Meter A       |
-| Grouping     | enabled       |
-| Group        | Hour Of Day   |
-| Aggregation  | Max           |
-| Date Range   | 6 months      |
-
-
-
-## Tag Grouping
-
-In addition to grouping by different time intervals, if you are analyzing tags (ie, target type = 'Tags') there is an additional feature to group the results by sub-tags of the selected tag.
-
-For example, if you have the following tag tree:
-
-<figure><img src="../.gitbook/assets/Screenshot 2025-01-30 at 17.25.49.png" alt=""><figcaption></figcaption></figure>
-
-and you then analyze by the top level 'area' tag like this:
-
-<figure><img src="../.gitbook/assets/Screenshot 2025-01-30 at 17.25.21.png" alt=""><figcaption></figcaption></figure>
-
-You can then add a tag group filter (at the bottom right in the filter panel) and choose to group by the 'area' tag.
-
-The result is that each bar will now be further grouped by each of the sub-tags of the selected tag.
-
-In this case, the top level tag we have chosen to filter by has  4 sub tags:  car park, data center, lettable and other.
-
-So 4 groups will be defined.
-
-<figure><img src="../.gitbook/assets/Screenshot 2025-01-30 at 17.25.31.png" alt=""><figcaption></figcaption></figure>
+คุณสามารถเลือกดูค่าเฉลี่

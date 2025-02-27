@@ -1,33 +1,30 @@
-# Baselines
+# ฐานศูนย์
 
-Baselines let you track your actual consumption against an idea consumption.
+ฐานศูนย์ช่วยให้คุณสามารถติดตามการบริโภคจริงของคุณเมื่อเทียบกับการบริโภคที่เป็นไอเดีย
 
-What is the ideal consumption? It depends on your needs!
+การบริโภคที่เหมาะสมคืออะไร? มันขึ้นอยู่กับความต้องการของคุณ!
 
-Your ideal consumption maybe whatever you recorded as consumption at a specific point in time in the past and you want to compare how your current consumption tracks against that.
+การบริโภคที่เหมาะสมของคุณอาจเป็นสิ่งที่คุณบันทึกไว้เป็นการบริโภคในจุดเวลาที่เฉพาะเจาะจงในอดีตและคุณต้องการเปรียบเทียบว่าการบริโภคปัจจุบันของคุณติดตามอยู่ที่ระดับไหน
 
-Your ideal consumption could be based on some regulatory or compliance-based standard that you are looking to adhere to.
+การบริโภคที่เหมาะสมของคุณอาจขึ้นอยู่กับมาตรฐานที่มีอยู่เพื่อปฏิบัติตามกฎหมายหรือความยินยอมที่คุณกำลังมองหา
 
-You can define multiple baselines  - some may be based on your internal standards for what consumption should be like and others could be to track against country or global standards based on your building type.
-
-
-
-### Why do I need to define baselines?
-
-The main reason to define baselines is to easily generate analytics and view data on how your current consumption tracks against some fixed baseline.
+คุณสามารถกำหนดฐานศูนย์หลายรายการ - บางอย่างอาจขึ้นอยู่กับมาตรฐานภายในของคุณเกี่ยวกับการบริโภคที่ควรเป็นอย่างไรและอื่น ๆ อาจเพื่อติดตามตามมาตรฐานของประเทศหรือมาตรฐานทั่วโลกขึ้นอยู่กับประเภทของอาคารของคุณ
 
 
 
-### How do baselines work?
+### ทำไมฉันต้องกำหนดฐานศูนย์?
 
-You can define multiple baselines. You first need to give a name for your baseline. And then configure corresponding values for your baseline.
-
-There are a few rules for how they work:
-
-1. A single baseline can be applied to multiple utility types. So you can define a baseline called 'My Company Internal Baseline' and set different baseline values for water consumption and energy consumption and gas consumption
-2. Each meter, virtual meter, group, tag or location can have a baseline value attached to it. You can define specific baseline values for each entity. The baselines may differ wildly between them based on the nature of the item. For example, a meter recording the lighting across the entire building will have a different baseline from a meter recording the plug load in floor 3.
-3. Baselines are optional - you can choose not to configure values for some or all entities
-4. Baselines are configured as a daily consumption value. When doing analytics, the system will calculate what the baseline should be for the date period you choose based on the daily value that you configure.
+เหตุผลหลักในการกำหนดฐานศูนย์คือเพื่อสร้างการวิเคราะห์และดูข้อมูลได้ง่ายเกี่ยวกับวิธีการติดตามการบริโภคปัจจุบันของคุณตามฐานศูนย์ที่กำหนดไว้
 
 
 
+### ฐานศูนย์ทำงานอย่างไร?
+
+คุณสามารถกำหนดฐานศูนย์หลายรายการ คุณต้องตั้งชื่อฐานศูนย์ของคุณก่อน แล้วจึงกำหนดค่าที่สอดคล้องกับฐานศูนย์ของคุณ
+
+มีกฎบางประการเกี่ยวกับวิธีการทำงาน:
+
+1. ฐานศูนย์เดียวสามารถใช้กับหลายประเภทของสาธารณูปโภค ดังนั้นคุณสามารถกำหนดฐานศูนย์ที่เรียกว่า 'ฐานศูนย์ภายในของบริษัทของฉัน' และตั้งค่าฐานศูนย์ที่แตกต่างกันสำหรับการบริโภคน้ำและการบริโภคพลังงานและการบริโภคแก๊ส
+2. แต่ละเมตร, เมตรเสมือน, กลุ่ม, แท็กหรือสถานที่สามารถมีค่าฐานศูนย์ที่แนบมากับมัน คุณสามารถกำหนดค่าฐานศูนย์ที่เฉพาะเจาะจงสำหรับแต่ละรายการ ฐานศูนย์อาจแตกต่างกันอย่างมากระหว่างรายการต่างๆ ขึ้นอยู่กับลักษณะของรายการ ตัวอย่างเช่น, เมตรที่บันทึกการใช้ไฟทั้งหมดของอาคารจะมีฐานศูนย์ที่แตกต่างจากเมตรที่บันทึกการใช้ปลั๊กในชั้น 3
+3. ฐานศูนย์เป็นสิ่งที่ไม่จำเป็น - คุณสามารถเลือกที่จะไม่กำหนดค่าสำหรับบางรายการหรือทุกรายการ
+4. ฐานศูนย์ถูกกำหนดเป็นค่าการบริโภครายวัน เมื่อทำการวิเคราะห์, ระบบจะคำนวณว่าฐานศูนย์ควรเป็นอย่างไรสำหรับช่วงเวลาที่คุณเลือกขึ้นอยู่กับค่ารายวันที่คุณกำหนด
