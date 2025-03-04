@@ -1,104 +1,104 @@
-# การดำเนินการที่ซับซ้อน
+# Complex Implementations
 
-ขั้นตอนแรกในการดำเนินการที่ซับซ้อนคือการเข้าใจลำดับชั้นของเมตร
+The first step to executing a complex implementation is understanding the meter hierarchy.
 
-## การเข้าใจลำดับชั้นของเมตร
+## Understanding Meter Hierarchies
 
-ต้นไม้เมตรหรือลำดับชั้นของเมตรหมายถึงการจัดเรียงของเมตรพลังงาน (เช่น ไฟฟ้า, ก๊าซ, น้ำ) ในความสัมพันธ์ระหว่างแม่-ลูกเพื่อแสดงวิธีการวัดและรวมการใช้พลังงานภายในสถานที่, วิทยาเขต, หรือเครือข่าย.&#x20;
+A meter tree or meter hierarchy refers to the structured arrangement of energy meters (e.g., electricity, gas, water) in a parent-child relationship to represent how energy usage is measured and aggregated within a facility, campus, or network.&#x20;
 
-ลำดับชั้นนี้ช่วยในการติดตาม, วิเคราะห์, และปรับปรุงการใช้พลังงานในระดับความละเอียดที่ต่างกัน
+This hierarchy helps in tracking, analyzing, and optimizing energy consumption at different levels of granularity.
 
 
 
-นี่คือตัวอย่างของลำดับชั้นของเมตร
+This is an example of a meter hierarchy
 
 <figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
 
-ลำดับชั้นของเมตรมักจะถูกจัดเรียงเป็นหลายระดับ:
+A meter hierarchy is typically organized into multiple levels:
 
-* เมตรราก - นี่คือการป้อนหลักเข้าสู่อาคารหรือสถานที่ทำงาน
-* เมตรระหว่าง - แสดงการแบ่งแยกเช่นชั้น
-* เมตรใบ - แสดงอุปกรณ์เฉพาะหรือห้องหรือผู้เช่า
+* Root Meter - This is the main feed into the building or workplace
+* Intermediate Meters - Represents divisions like floors
+* Leaf Meters - Represents specific equipment or rooms or tenants
 
-ข้อมูลการใช้งานจะถูกนำมาจากเมตรลูกไปยังเมตรแม่ของพวกเขา
-
-
-
-### บางตัวอย่างของลำดับชั้นของเมตร:
-
-#### ตัวอย่างอาคารง่ายๆ
-
-* เมตรหลัก (ราก):&#x20;
-  * วัดพลังงานทั้งหมดที่อาคารใช้.
-* เมตรย่อย (ระหว่าง):
-  * วัดพลังงานที่ใช้โดยชั้นเฉพาะ.
-* เมตรอุปกรณ์ (ใบ):
-  * วัดพลังงานที่ใช้โดยระบบ HVAC, การส่องสว่าง, และลิฟท์.
-
-#### สถานที่อุตสาหกรรม
-
-* เมตรสาธารณูปโภคหลัก:
-  * ติดตามพลังงานทั้งหมดที่ส่งมอบให้กับสถานที่.
-* เมตรพื้นที่:
-  * &#x20;เมตรแยกสำหรับสายการผลิต, พื้นที่สำนักงาน, และพื้นที่เก็บของ.
-*   เมตรอุปกรณ์:
-
-    * เมตรย่อยสำหรับอุปกรณ์ที่ใช้พลังงานสูงเช่น หม้อน้ำ, เครื่องอัด, หรือเตา.
+Consumption data is rolled up from child meters to their parent meters.
 
 
 
-## การจำลองลำดับชั้นของเมตร
+### Some examples of a meter hierarchy:
 
-แอปพลิเคชัน UMS มีเครื่องมือบางอย่างสำหรับการจำลองและจัดการลำดับชั้นของเมตร
+#### Simple Building Example
 
-### เมตรทางกายภาพ
+* Main Meter (Root):&#x20;
+  * Measures total energy consumed by the building.
+* Sub-Meters (Intermediate):
+  * Measure energy used by specific floors.
+* Equipment Meters (Leaf):
+  * Measure energy consumed by HVAC systems, lighting, and elevators.
 
-เหล่านี้แทนเมตรจริงที่มีอยู่และให้ค่าอ่าน
+#### Industrial Facility
 
-[ดูส่วนของแนวคิดเกี่ยวกับเมตรทางกายภาพเพื่อข้อมูลเพิ่มเติม](complex-implementations.md#physical-meters)
+* Main Utility Meter:
+  * Tracks the total energy supplied to the facility.
+* Area Meters:
+  * &#x20;Separate meters for production lines, office spaces, and storage areas.
+*   Equipment Meters:
 
-### เมตรเสมือนจริง
-
-เหล่านี้คือเมตรที่คำนวณ
-
-ใช้เหล่านี้เพื่อเพิ่มเมตรอ่อนที่แสดงการใช้งานที่คุณต้องการติดตามแต่ที่เมตรทางกายภาพไม่มีอยู่
-
-[ดูส่วนของแนวคิดเกี่ยวกับเมตรเสมือนจริงเพื่อข้อมูลเพิ่มเติม](complex-implementations.md#virtual-meters)
+    * Sub-meters for high-energy equipment like boilers, compressors, or ovens.
 
 
 
-### กลุ่มเมตร
+## Modeling Meter Hierarchies
 
-เหล่านี้คล้ายกับเมตรเสมือนจริง แต่ยังสามารถอ้างอิงถึงเมตรเสมือนจริงอื่นๆ และกลุ่มเมตรอื่นๆ
+The UMS application provides a few tools for modeling and managing meter hierarchies.
 
-[ดูส่วนของแนวคิดเกี่ยวกับกลุ่มเมตรเพื่อข้อมูลเพิ่มเติม](complex-implementations.md#meter-groups)
+### Physical Meters
 
-### แท็ก
+These represent actual meters that are present and provide readings.
 
-แท็กให้กลไกที่ยืดหยุ่นในการจัดเรียงเมตรในลักษณะเชิงลำดับชั้น แท็กสามารถนำมาใช้กับเมตร, เมตรเสมือนจริง หรือกลุ่มเมตร
+[See the concept section on physical meters for more information.](complex-implementations.md#physical-meters)
 
-[ดูส่วนของแนวคิดเกี่ยวกับแท็กเพื่อข้อมูลเพิ่มเติม](complex-implementations.md#tags)
+### Virtual Meters
+
+These are calculated meters.
+
+Use these to add soft meters that represent consumption that you want to track but where physical meters don't exist.
+
+[See the concept section on virtual meters for more information.](complex-implementations.md#virtual-meters)
+
+
+
+### Meter Groups
+
+These are similar to virtual meters but can also reference other virtual meters and other meter groups.
+
+[See the concept section on meter groups for more information](complex-implementations.md#meter-groups)
+
+### Tags
+
+Tags provide a flexible mechanism for organizing meters in a hierarchical fashion. Tags can be applied to meters, virtual meters or meter groups.
+
+[See the concept section on tags for more information](complex-implementations.md#tags)
 
 {% hint style="info" %}
-ดูเพิ่มเติม [แท็ก ประกับ กลุ่มเมตร](../readme/concepts/tags-vs-meter-groups.md) สำหรับการสนทนาเกี่ยวกับวิธีการใช้และที่แต่ละอย่างควรใช้
+Also see [Tags vs Meter Groups](../readme/concepts/tags-vs-meter-groups.md) for discussions on how these can be used and where each one should be used.
 {% endhint %}
 
 
 
-## วัตถุประสงค์ในการดำเนินการ
+## Implementation Objectives
 
-ตอนนี้คุณเข้าใจวิธีการทำงานของลำดับชั้นของเมตรขั้นตอนถัดไปคือการระบุวัตถุประสงค์ในการตั้งค่าการติดตามการใช้สาธารณูปโภค
+Now that you understand how meter hierarchies work the next step is identifying what the objectives are for setting utility consumption monitoring.
 
 
 
-คำถามที่ต้องถาม:
+Some questions that need to be asked:
 
-1. คุณต้องการติดตามการใช้งานสำหรับอาคารทั้งหมดเท่านั้นหรือไม่? หรือสำหรับแต่ละสถานที่ย่อยด้วย?
-   1. แต่ละสถานที่ย่อยที่ต้องการติดตามมีเมตรทางกายภาพของตัวเองหรือไม่?
-   2. ถ้าบางพื้นที่ไม่มีเมตร? การใช้งานสามารถคำนวณจากการอ่านการใช้งานของเมตรอื่นๆ ได้หรือไม่?
-2. คุณต้องการติดตามการใช้งานตามหมวดหมู่ที่แตกต่างกัน (ประเภทอุปกรณ์, หรือการใช้น้ำ ฯลฯ) นอกจากตำแหน่งหรือไม่?
+1. Do you need to monitor consumption for the entire building only? Or for each individual  sub-location as well?
+   1. Does each sub-location that needs to be monitored have its own physical meter?
+   2. What if some areas don't have meters? Can the consumption be calculated from the consumption readings of other meters?
+2.  Do you need to monitor consumption based on different categories (equipment type, or water usage etc...) apart from location?
 
-    1. สำหรับหมวดหมู่เหล่านี้คุณต้องการเปรียบเทียบการใช้งานระหว่างหมวดหมู่ที่แตกต่างกันหรือหมวดหมู่ย่อยหรือไม่?
+    1. For these categories do you need to compare consumption across different categories or sub-categories?
 
 
 

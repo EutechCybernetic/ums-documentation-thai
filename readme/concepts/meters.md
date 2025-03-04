@@ -1,16 +1,16 @@
-# เมตร
+# Meters
 
-เมตรทางฟิสิกส์เป็นสิ่งที่บันทึกการบริโภค ดังที่ชื่อแนะนำ คุณจะทำการแมปเหล่านี้กับเมตรทางฟิสิกส์ในโลกจริงที่คุณมี การอ่านสามารถถูกบันทึกต่อเนื่องตามเมตรที่มีระยะเวลาปกติ และเหล่านั้นคือจุดข้อมูลดิบที่ขับเคลื่อนการวิเคราะห์ทั้งหมด
+Physical meters are entities that record consumption. As the name suggest, you would typically map these to real world physical meters that you have. Readings can then be recorded against the meters at regular intervals and those are the raw data points that drive all the analytics.
 
-หากอาคารของคุณมีเมตรพลังงาน 3 เมตรและเมตรน้ำ 1 เมตร คุณจะลงทะเบียนเมตร 3 เมตรเป็นเมตรพลังงานและเมตร 1 เมตรเป็นเมตรน้ำ
+If your building has one 3 energy meters and 1 water meter, you would register 3 meters as energy meters and 1 meter as a water meter.
 
-แต่ละเมตรมีคุณสมบัติบางอย่างที่สามารถกำหนดค่าได้:
+Each meter has a few properties that can be configured:
 
-1. ประเภทยูทิลิตี้ (มันเป็นเมตรพลังงานหรือไม่? หรือเมตรน้ำ? หรืออย่างอื่น?)
-2. ชื่อ - สามารถเป็นอะไรก็ได้ที่อธิบายได้
-3. หน่วย - หน่วยที่เมตรนี้ใช้สำหรับการบันทึกและแสดงการอ่าน
-4. สถานที่ - สถานที่ที่เมตรนี้ถูกผูกมัดไว้ เมตรสามารถผูกมัดไว้กับหน่วยรายบุคคล ชั้นหรืออาคารทั้งหมด คุณจะเลือกสถานที่ที่ _ได้รับบริการ_ จากเมตรนี้โดยเฉพาะ
-5. แท็ก - คุณสามารถแท็กเมตรด้วยแท็กที่คุณกำหนดไว้ล่วงหน้า ดูส่วนของการแท็กเพื่อข้อมูลเพิ่มเติมเกี่ยวกับทำไมคุณจะต้องการทำเช่นนั้น
-6. การกำหนดค่าเบสไลน์ - กำหนดค่าเบสไลน์ประจำวันสำหรับแต่ละเมตร - ดูส่วนเบสไลน์สำหรับข้อมูลเพิ่มเติม
+1. The utility type (is it an energy meter? or water meter? or something else?)
+2. A name - can be anything descriptive
+3. Units - what units this meter uses for recording and showing readings.
+4. A location - what location this meter is tied to. Meters can be tied to individual units, a floor or an entire building. You would typically pick the location that is _served_ by this particular meter.
+5. Tags - you can tag meters with arbitrary tags that you pre-define. See the section on Tagging for more information on why you would want to do that
+6. Baseline configuration - configure daily baseline values for each meter - see the baseline section for more information.
 
-คุณสามารถบันทึกการอ่านสำหรับเมตรได้หลายวิธี รวมถึงการป้อนการอ่านด้วยตนเอง อัปโหลดไฟล์ csv อัปโหลดบิลหรือการรวมกับระบบ IoT และ BMS
+You can record readings for meters in several ways including manually entering the reading, uploading a csv file, uploading a bill or integration with IoT and BMS systems.

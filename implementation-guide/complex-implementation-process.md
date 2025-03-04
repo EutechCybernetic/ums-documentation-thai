@@ -1,37 +1,38 @@
-# กระบวนการใช้งานที่ซับซ้อน
+# Complex Implementation Process
 
-กระบวนการใช้งานที่ซับซ้อนนี้เหมือนกับกระบวนการใช้งานที่ง่าย ยกเว้นขั้นตอนเพิ่มเติมที่สำคัญหนึ่ง: การจับคู่มิเตอร์กับสถานที่
+The complex implementation process is the same as the simple implementation process except for one major extra step: Mapping meters to locations
 
-* ตั้งค่ามิเตอร์ ดูที่ [configuring-meters.md](../getting-started/configuring-the-application/configuring-meters.md "mention")
-* ตั้งค่าการรวมมิเตอร์
-* ตั้งค่าแท็ก, มิเตอร์เสมือน หรือกลุ่มมิเตอร์ (ดูที่ [configuring-virtual-meters.md](../getting-started/configuring-the-application/configuring-virtual-meters.md "mention"), [configuring-meter-groups.md](../getting-started/configuring-the-application/configuring-meter-groups.md "mention"), [configuring-tags.md](../getting-started/configuring-the-application/configuring-tags.md "mention"))
-* จับคู่มิเตอร์กับสถานที่
-* ตั้งค่าแดชบอร์ดของคุณ
-
-
-
-## ทำไมฉันต้องจับคู่มิเตอร์กับสถานที่
-
-เมื่อคุณมีมิเตอร์และมิเตอร์ย่อย การบริโภคสำหรับสถานที่อาจทำให้เกิดความสับสนเนื่องจากยังรวมมิเตอร์ย่อย ที่ค่าของมันอาจจะถูกนำมาคำนวณในมิเตอร์หลักแล้ว
-
-ตัวอย่างเช่น ถ้ามิเตอร์หลักคือแผงกระจายและมิเตอร์ย่อยคือมิเตอร์สาธารณูปโภคภายในชั้น แผงกระจายจะรวมการบริโภคของมิเตอร์ย่อยแล้ว
-
-ดังนั้นถ้าทั้งสองถูกแนบกับสถานที่เดียวกัน มันจะนับการบริโภคซ้ำ
+* Configure Meters. See [configuring-meters.md](../getting-started/configuring-the-application/configuring-meters.md "mention")
+* Setup the integration for meters
+* Optionally setup tags, virtual meters or meter groups. (See [configuring-virtual-meters.md](../getting-started/configuring-the-application/configuring-virtual-meters.md "mention"), [configuring-meter-groups.md](../getting-started/configuring-the-application/configuring-meter-groups.md "mention"), [configuring-tags.md](../getting-started/configuring-the-application/configuring-tags.md "mention"))
+* Map Meters to locations
+* Setup your dashboards
 
 
 
-วิธีแก้ไขคือการทำเครื่องหมายแผงกระจายเป็นมิเตอร์หลักสำหรับสถานที่
+## Why do I need to map meters to locations
 
-สำหรับทุกสถานที่ที่คุณต้องการติดตามการบริโภคและมีมิเตอร์ย่อย คุณสามารถทำเครื่องหมายหนึ่งในมิเตอร์เป็นมิเตอร์หลักสำหรับสถานที่นั้น
+When you have meters and sub meters, the consumption for a location can be misleading as it would also include sub meters, the values of which would have already been factored into the parent meter.&#x20;
+
+For example, if the parent meter is a distribution board and the sub meter is a utility meter within a floor, the distribution board would already include the consumption of the sub meter.
+
+So if both are attached to the same location, it would double count some of the consumption.
+
+
+
+The solution is to mark the distribution board as the main meter for the location.
+
+For every location you wish to track consumption for and has sub meters, you can mark one of the meters as the main meter for that location.&#x20;
 
 {% hint style="info" %}
-มิเตอร์หลักโดยทั่วไปจะเป็นแผงกระจายที่สถานที่นั้น
+The main meter would typically be the distribution board at that location.
 {% endhint %}
 
-คุณยังสามารถจับคู่มิเตอร์เสมือนหรือกลุ่มมิเตอร์
+You can also map a virtual meter or a meter group.
 
-ดังนั้นถ้ามีมิเตอร์หลักมากกว่าหนึ่งในสถานที่ - คุณสามารถสร้างมิเตอร์เสมือนหรือกลุ่มมิเตอร์สำหรับมันแล้วจับคู่กลุ่มหรือมิเตอร์เสมือนนั้นเป็นมิเตอร์หลักสำหรับสถานที่
+So if there are more than one main meter in a location - you can create a virtual meter or meter group for it and then map that group or virtual meter as the main meter for the location.
 
 
 
-ดูที่ส่วน [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการจับคู่มิเตอร์กับสถานที่.
+See the [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") section for more info on mapping a meter to a location.
+
