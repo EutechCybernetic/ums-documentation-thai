@@ -1,9 +1,9 @@
-# Configuring Location Information
+# การกำหนดค่าข้อมูลตำแหน่งที่ตั้ง
 
-Location data available in UMS is configured as part of the iviva Location application.
+ข้อมูลตำแหน่งที่ตั้งที่มีใน UMS ถูกกำหนดค่าเป็นส่วนหนึ่งของแอปพลิเคชัน iviva Location.
 
-The location tree is not editable within the UMS application itself.
+ไม่สามารถแก้ไขต้นไม้ตำแหน่งที่ตั้งภายในแอปพลิเคชัน UMS ได้เอง
 
-However, you can configure baselines for each section of the location tree.
+อย่างไรก็ตาม, คุณสามารถกำหนดค่าเบสไลน์สำหรับแต่ละส่วนของต้นไม้ตำแหน่งที่ตั้ง
 
-You can expand the tree and click on any node to set baseline values for that node.
+คุณสามารถขยายต้นไม้และคลิกที่โหนดใดๆ เพื่อตั้งค่าเบสไลน์สำหรับโหนดนั้น.

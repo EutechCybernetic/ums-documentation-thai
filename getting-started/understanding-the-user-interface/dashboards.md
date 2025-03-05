@@ -1,38 +1,36 @@
 ---
 description: >-
-  In the dashboard section you can configure multiple dashboards and each
-  dashboard can have multiple widgets on it.
+  ในส่วนของแดชบอร์ด คุณสามารถกำหนดค่าแดชบอร์ดหลายๆ อันได้ และแต่ละแดชบอร์ดสามารถมีวิดเจ็ตหลายๆ อันอยู่บนมัน
 ---
 
-# Dashboards
+# แดชบอร์ด
 
-Start by selecting the dashboard from the sidebar
+เริ่มต้นด้วยการเลือกแดชบอร์ดจากแถบด้านข้าง
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="" width="243"><figcaption></figcaption></figure></div>
 
-In the main area, you can see the widgets that have been added to the dashboard (if any).
+ในพื้นที่หลัก คุณสามารถเห็นวิดเจ็ตที่ถูกเพิ่มลงในแดชบอร์ด (ถ้ามี)
 
-If you have permissions, you can edit the dashboard and add/resize/remove/configure widgets.
+ถ้าคุณมีสิทธิ์ คุณสามารถแก้ไขแดชบอร์ดและเพิ่ม/ปรับขนาด/ลบ/กำหนดค่าวิดเจ็ต
 
-To make modifications to the dashboard, you need to go into 'Edit' mode.
+เพื่อทำการแก้ไขแดชบอร์ด คุณต้องเข้าสู่โหมด 'แก้ไข'
 
-Click on the 'pencil' icon on the top right corner of the screen to go into edit mode.
+คลิกที่ไอคอน 'ดินสอ' ที่มุมบนขวาของหน้าจอเพื่อเข้าสู่โหมดแก้ไข
 
 ![](<../../.gitbook/assets/image (6).png>)
 
 
 
-Once in edit mode, you can edit widgets, resize them, delete them and add new widgets.
+เมื่ออยู่ในโหมดแก้ไข คุณสามารถแก้ไขวิดเจ็ต ปรับขนาด ลบ และเพิ่มวิดเจ็ตใหม่
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-When adding new widgets, you can choose from the library of available widgets.
+เมื่อเพิ่มวิดเจ็ตใหม่ คุณสามารถเลือกจากห้องสมุดของวิดเจ็ตที่มีอยู่
 
 {% hint style="info" %}
-The widgets available in the library will vary and may contain custom widgets that were built specifically for that installation
+วิดเจ็ตที่มีในห้องสมุดอาจมีการเปลี่ยนแปลง และอาจมีวิดเจ็ตที่กำหนดเองที่ถูกสร้างขึ้นเฉพาะสำหรับการติดตั้งนั้น
 {% endhint %}
 
-The 'Consumption' widget is the standard widget that comes with UMS and has a lot of flexible analytics and visualization options within it.&#x20;
+วิดเจ็ต 'การบริโภค' เป็นวิดเจ็ตมาตรฐานที่มาพร้อมกับ UMS และมีตัวเลือกการวิเคราะห์และการแสดงผลที่ยืดหยุ่นอยู่ภายใน
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
-

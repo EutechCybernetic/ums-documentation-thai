@@ -1,35 +1,35 @@
 ---
-description: Documentation on the consumption flow analysis tool
+description: คู่มือเกี่ยวกับเครื่องมือวิเคราะห์การบริโภคพลังงาน
 ---
 
-# Consumption Contribution Tool
+# เครื่องมือวิเคราะห์การบริโภคพลังงาน
 
-The consumption contribution tool allows you to see how consumption for a virtual meter or meter group is constructed from the underlying meters.
+เครื่องมือวิเคราะห์การบริโภคพลังงานช่วยให้คุณเห็นว่าการบริโภคพลังงานของมิเตอร์เสมือนหรือกลุ่มมิเตอร์สร้างขึ้นจากมิเตอร์ที่อยู่ภายใต้ได้อย่างไร
 
-You can access it by going ot the consumption analysis tool for a specific virtual meter or group and clicking the 'View Contributions' button at the bottom.
+คุณสามารถเข้าถึงมันได้โดยไปที่เครื่องมือวิเคราะห์การบริโภคพลังงานสำหรับมิเตอร์เสมือนหรือกลุ่มที่เฉพาะเจาะจงและคลิกที่ปุ่ม 'ดูการมีส่วนร่วม' ที่ด้านล่าง
 
 <figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-This will open up the contributions interface.
+นี่จะเปิดหน้าต่างส่วนร่วม
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-01-30 at 17.30.19.png" alt=""><figcaption></figcaption></figure>
 
-On the left side, the bar shows the virtual meter or group that is currently being inspected.
+ทางด้านซ้าย แถบแสดงมิเตอร์เสมือนหรือกลุ่มที่กำลังถูกตรวจสอบในขณะนี้
 
-On the left side, the underlying meters that make up the virtual meter's consumption is shown.
+ทางด้านซ้าย มิเตอร์ที่อยู่ภายใต้ที่สร้างขึ้นเป็นการบริโภคพลังงานของมิเตอร์เสมือนจะถูกแสดง
 
-The lines connecting the virtual meters to its underlying meters represents the flow of energy.
+เส้นที่เชื่อมมิเตอร์เสมือนกับมิเตอร์ที่อยู่ภายใต้แทนการไหลของพลังงาน
 
-The thickness of the line is proportional to how much that metre contributed to the virtual meter's energy consumption for the selected date range.
+ความหนาของเส้นเป็นสัดส่วนกับว่ามิเตอร์นั้นมีส่วนร่วมกับการบริโภคพลังงานของมิเตอร์เสมือนมากเท่าใดสำหรับช่วงวันที่เลือก
 
-Red lines represent negative consumption (ie, the formula subtracts that energy from the virtual metre).
+เส้นสีแดงแทนการบริโภคลบ (เช่น สูตรลบพลังงานนั้นออกจากมิเตอร์เสมือน)
 
-Gree lines represent positive consumption.
+เส้นสีเขียวแทนการบริโภคบวก
 
 {% hint style="info" %}
-The date range in the consumption analysis interface is used to show the energy values in the contribution chart
+ช่วงวันที่ในหน้าต่างวิเคราะห์การบริโภคพลังงานใช้เพื่อแสดงค่าพลังงานในแผนภูมิการมีส่วนร่วม
 {% endhint %}
 
-You can hover over each bar to see the actual energy consumption value contributed by it.
+คุณสามารถวางเมาส์ทับแถบแต่ละแถบเพื่อดูค่าการบริโภคพลังงานจริงที่มีส่วนร่วมโดยมัน
 
-If any of the bars on the left are themselves, virtual metres or groups, you can double click on it to expand it out to show its underlying meters as well.
+หากแถบใด ๆ ทางด้านซ้ายเป็นมิเตอร์เสมือนหรือกลุ่มเอง คุณสามารถดับเบิลคลิกที่มันเพื่อขยายมันออกเพื่อแสดงมิเตอร์ที่อยู่ภายใต้ของมันด้วย
