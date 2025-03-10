@@ -1,65 +1,66 @@
-# การกำหนดค่า Utility Types
+# Configuring Utility Types
 
-คุณสามารถกำหนดค่า utility types หลายรูปแบบในแอปพลิเคชัน
+You can configure multiple utility types within the application.
 
-ไปที่ส่วน Configuration แล้วไปที่แท็บ 'Meter Types' เพื่อกำหนดค่า utility types ต่างๆ
+Under the Configuration section go to the 'Meter Types' tab to configure the various utility types.
 
 {% hint style="info" %}
-เราใช้คำว่า 'meter type' และ 'utility type' แบบสลับกัน&#x20;
+We use 'meter type' and 'utility type' interchangeably&#x20;
 {% endhint %}
 
-ที่นี่คุณสามารถดู utility types ที่มีอยู่แล้ว แก้ไข และเพิ่ม types ใหม่
+Here you can view existing utility types, edit them and add new types.
 
-คลิกที่ปุ่ม 'Add Item' ที่อยู่ด้านบนขวาเพื่อเพิ่ม utility type ใหม่
+Click the 'Add Item' button on the top right to add a new utility type.
 
-คุณสามารถคลิกที่ปุ่ม 'edit' ที่อยู่ใต้ utility type เพื่อแก้ไขคุณสมบัติของมัน
+You can click the 'edit' button under a utility type to edit its properties.
 
-คุณยังสามารถลบ utility types ได้โดยคลิกที่ไอคอนลบ (ถังขยะ)
+You can also delete utility types by clicking the delete (trash) icon.
 
 {% hint style="warning" %}
-การลบเหมือนกับเพชร คือถาวร กรุณาอย่าลบ utility types จนกว่าคุณจะสร้างมันโดยไม่ได้ตั้งใจ&#x20;
+Deleting, like diamonds, is forever. Please don't delete utility types unless you accidentally created it just now.&#x20;
 {% endhint %}
 
 
 
-## การกำหนดค่า utility types
+## Configuring utility types
 
-ไม่ว่าคุณจะเพิ่ม utility type ใหม่หรือแก้ไขที่มีอยู่แล้ว หน้าตาของอินเทอร์เฟซในการทำงานนั้นคล้ายกัน
+Whether you add a new utility type or edit an existing one, the interface for doing so is similar.
 
-คุณมีตัวเลือกในการระบุหน่วยที่รองรับสำหรับ utility type นี้
+You have the option to specify units that are supported for this utility type.
 
-การกำหนดค่าหน่วยนั้นสำคัญ คุณต้องการหน่วยอย่างน้อยหนึ่งหน่วยสำหรับแต่ละ utility type
+Configuring units is important. You need at least one unit for each utility type.
 
 
 
-## การเข้าใจ Units
+## Understanding Units
 
-แต่ละ utility type สามารถรองรับหน่วยหลายหน่วยที่ใช้บันทึกการบริโภค
+Each utility type can support multiple units in which consumption is recorded.
 
-สำหรับไฟฟ้า - นี้อาจเป็น `mWh` หรือ `kWh`
+For electricity - this could be `mWh` or `kWh`
 
-สำหรับน้ำเย็น นี้อาจเป็น `mWh` หรือ `btu`
+For chilled water, this could be `mWh`or  `btu`
 
-สำหรับการบริโภคขยะ อาจเป็น \`kg\`
+For waste consumption it could be \`kg\`
 
-สำหรับน้ำ อาจเป็นลิตรหรือแกลลอน
+For water it might be litres or gallons
 
-แต่ละ utility type มี **base unit** หนึ่งหน่วย
+Each utility type has one **base unit**
 
-แล้วหน่วยอื่นๆจะถูกกำหนดค่าตามความสัมพันธ์กับ base unit
+And then other units are defined in relationship to the base unit.
 
-แต่ละหน่วยถูกกำหนดค่าด้วย _conversion factor_ ที่กำหนดวิธีการแปลงเป็น base unit
+Each unit is defined with a _conversion factor_ that defines how it can be translated to the base unit.
 
-Base unit มี conversion factor เป็น 1 เสมอ
+The base unit always has a conversion factor of 1.
 
 {% hint style="info" %}
-วิธีการกำหนด base unit คือการกำหนดหน่วยใหม่และกำหนด conversion factor เป็น 1 ซึ่งจะทำให้มันกลายเป็น base unit ของคุณโดยอัตโนมัติ
+How you define a base unit is basically by defining a new unit and giving the conversion factor as 1. That automatically makes it your base unit
 {% endhint %}
 
 {% hint style="info" %}
-คุณสามารถมีหลาย base units โดยการกำหนดหน่วยหลายหน่วยที่มี conversion factor เป็น 1 ได้หรือไม่? จากทางเทคนิคคุณสามารถทำได้ แต่จริงๆแล้วมันไม่มีประโยชน์อะไร
+Can you have multiple base units by defining multiple units with a conversion factor of 1? Technically you can but it won't really serve any purpose.
 {% endhint %}
 
 
 
-Base unit นั้นสำคัญ - โดยปริยายข้อมูลทั้งหมดจะถูกแปลงเป็น base unit เมื่อถูกบันทึกและหน่วยที่ใช้เป็นค่าเริ่มต้นสำหรับการรายงานจะเป็น base unit.
+The base unit is important - by default all data is converted into the base unit when recorded and the default unit for reporting will be the base unit.
+
