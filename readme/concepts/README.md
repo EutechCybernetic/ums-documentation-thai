@@ -1,5 +1,5 @@
-# แนวคิด
+# Concepts
 
-## แนวคิด
+## Concepts
 
-ส่วนนี้อธิบายแนวคิดหลักที่ใช้ในแอปพลิเคชัน UMS
+This section describes the main concepts used in the UMS application.

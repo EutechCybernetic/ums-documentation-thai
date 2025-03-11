@@ -1,3 +1,3 @@
-# การเริ่มต้น
+# Getting Started
 
-ส่วนนี้จะช่วยคุณเริ่มต้นด้วยการตั้งค่าแอปพลิเคชัน UMS, การกำหนดค่าประเภทยูทิลิตี้ที่แตกต่างกันและการบันทึก
+This section will help you get started by setting up the UMS application, configuring different utility types and recording

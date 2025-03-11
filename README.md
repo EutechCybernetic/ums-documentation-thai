@@ -1,21 +1,22 @@
-# บทนำ
+# Introduction
 
-## ระบบการจัดการสาธารณูปโภค
+## Utility Management System
 
-ระบบการจัดการสาธารณูปโภคของ iviva (UMS) เป็นแอปพลิเคชันและบริการที่จัดการข้อมูลและให้การวิเคราะห์ที่เกี่ยวข้องกับทรัพยากรสาธารณูปโภค
+The iviva Utility Management System (UMS) is an application and service to manage data and provide analytics related to utility resources.
 
-ทรัพยากรสาธารณูปโภคคืออะไร?
+What are utility resources?
 
-โดยทั่วไป - ทรัพยากรใด ๆ ที่สามารถ _บริโภค_ และ _วัดได้_ อาจถือว่าเป็นทรัพยากรสาธารณูปโภค
+Broadly speaking - any resource that can be _consumed_ and _metered_ could be considered a utiltiy resource.
 
-ตัวอย่างบางส่วนคือ:
+Some examples are:
 
-* ไฟฟ้า
-* น้ำ
-* ก๊าซ
-* ขยะ
-* แบนด์วิดท์อินเทอร์เน็ต
-* เชื้อเพลิง
-* ออกซิเจน
+* Electricity
+* Water
+* Gas
+* Waste
+* Internet Bandwidth
+* Fuel
+* Oxygen
 
-นี้คือบางส่วนของทรัพยากรที่ข้อมูลสามารถจัดการได้ในแอปพลิเคชัน UMS
+These are some of the resources for which data can be managed in the UMS application.
+
