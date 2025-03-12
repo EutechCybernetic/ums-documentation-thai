@@ -1,26 +1,24 @@
-# Operational Guide
+# คู่มือการดำเนินการ
 
-The key operational tasks in the UMS application are to be able to track and report on consumption data across different utilities.
+งานดำเนินการสำคัญในแอปพลิเคชัน UMS คือการสามารถติดตามและรายงานข้อมูลการใช้งานของสิ่งอำนวยความสะดวกต่างๆ
 
-The application provides 3 tools for doing this:
+แอปพลิเคชันนี้มีเครื่องมือ 3 ชนิดสำหรับทำงานนี้:
 
-1. The meter explorer
-2. The tag explorer
-3. Dashboards
+1. ตัวสำรวจมิเตอร์
+2. ตัวสำรวจแท็ก
+3. แดชบอร์ด
 
-## Accessing these tools
+## การเข้าถึงเครื่องมือเหล่านี้
 
-The operational tools are categorized by the meter type.\
-Each meter type has a separate section to explore meters and tags.
+เครื่องมือดำเนินการถูกจัดหมวดหมู่ตามประเภทมิเตอร์\
+แต่ละประเภทมิเตอร์มีส่วนแยกต่างหากสำหรับสำรวจมิเตอร์และแท็ก
 
-Dashboards however, are consolidated and customizable and accessible from the dashboard menu.
+แต่แดชบอร์ดนั้นถูกรวมกันและสามารถปรับแต่งได้ และสามารถเข้าถึงได้จากเมนูแดชบอร์ด
 
-All of these tools are accessible from the sidebar.
+เครื่องมือทั้งหมดนี้สามารถเข้าถึงได้จากแถบด้านข้าง
 
 <figure><img src="../.gitbook/assets/image (14).png" alt="" width="375"><figcaption></figcaption></figure>
 
+ 
 
-
-
-
-Lets go through these in more detail.
+มาดูรายละเอียดเพิ่มเติมเกี่ยวกับเครื่องมือเหล่านี้กัน

@@ -1,18 +1,17 @@
-# User Permissions
+# สิทธิ์การใช้งานของผู้ใช้
 
-The utility management system follows the standard iviva role-based access control system.
+ระบบจัดการสิ่งอำนวยความสะดวกปฏิบัติตามระบบควบคุมการเข้าถึงที่มีบทบาทเป็นหลักของ iviva
 
-The application defines several application roles.
+แอปพลิเคชันนี้กำหนดบทบาทของแอปพลิเคชันหลายรายการ
 
-Using iviva's standard authorization framework, those roles can be collected into user roles and user groups.
+โดยใช้กรอบการอนุญาตมาตรฐานของ iviva บทบาทเหล่านี้สามารถรวบรวมเป็นบทบาทผู้ใช้และกลุ่มผู้ใช้
 
 
 
-The following application roles are available:
+บทบาทของแอปพลิเคชันที่มีให้ใช้งานดังนี้:
 
-| App Role                            | Description                                                                                                                                                                                                                                                                |
+| บทบาทแอป                            | คำอธิบาย                                                                                                                                                                                                                                                                |
 | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Allowed to access app               | This role is required for anyone to access the application. Users with this role can view all analytics data in the application.                                                                                                                                           |
-| Allowed to configure data           | This role is required to enable users to configure data - this includes configuration of meters, virtual meters, meter groups, tags, baselines and locations.                                                                                                              |
-| Allowed to save filters and reports | This role gives the user the permission to create reports in the system and create new dashboard widgets using the [consumption-analysis-tool.md](operational-guide/consumption-analysis-tool.md "mention") that are permanently set in the dashboard for everyone to view |
-
+| ได้รับอนุญาตให้เข้าถึงแอป               | บทบาทนี้จำเป็นสำหรับทุกคนที่จะเข้าถึงแอปพลิเคชัน ผู้ใช้ที่มีบทบาทนี้สามารถดูข้อมูลวิเคราะห์ทั้งหมดในแอปพลิเคชัน                                                                                                                                           |
+| ได้รับอนุญาตให้กำหนดค่าข้อมูล           | บทบาทนี้จำเป็นเพื่อให้ผู้ใช้สามารถกำหนดค่าข้อมูล - ซึ่งรวมถึงการกำหนดค่าเมตร, เมตรเสมือน, กลุ่มเมตร, แท็ก, ฐานข้อมูลและสถานที่                                                                                                              |
+| ได้รับอนุญาตให้บันทึกฟิลเตอร์และรายงาน | บทบาทนี้ให้สิทธิ์ให้ผู้ใช้สร้างรายงานในระบบและสร้างวิดเจ็ตแดชบอร์ดใหม่โดยใช้ [consumption-analysis-tool.md](operational-guide/consumption-analysis-tool.md "mention") ที่ถูกตั้งค่าอย่างถาวรในแดชบอร์ดสำหรับทุกคนดู |

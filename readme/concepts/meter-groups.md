@@ -1,7 +1,7 @@
-# Meter Groups
+# กลุ่มมิเตอร์
 
-While virtual meters allow you to define a soft meter that has a calcualted value based on one or more physical meters, Meter Groups allow you define more complex groupings. A Meter group can consist of multiple physical meters, virtual meters and other meter groups as well. And each item added to the group can have an associated multiplier factor.
+ในขณะที่มิเตอร์เสมือนจริงช่วยให้คุณสามารถกำหนดมิเตอร์อ่อนที่มีค่าที่คำนวณได้จากมิเตอร์ทางกายภาพหนึ่งหรือมากกว่านั้น กลุ่มมิเตอร์ช่วยให้คุณสามารถกำหนดการจัดกลุ่มที่ซับซ้อนขึ้น กลุ่มมิเตอร์สามารถประกอบด้วยมิเตอร์ทางกายภาพหลายตัว, มิเตอร์เสมือนจริง และกลุ่มมิเตอร์อื่น ๆ ด้วย และแต่ละรายการที่เพิ่มเข้าไปในกลุ่มสามารถมีปัจจัยคูณที่เชื่อมโยงอยู่
 
-Like virtual meters, meter groups also keep track of consumption as a calculation of other meters. However unlike virtual meters, meter groups can also refer to other virtual meters and other meter groups.
+เช่นเดียวกับมิเตอร์เสมือนจริง, กลุ่มมิเตอร์ยังเก็บรายการการบริโภคเป็นการคำนวณของมิเตอร์อื่น ๆ อย่างไรก็ตาม ไม่เหมือนกับมิเตอร์เสมือนจริง, กลุ่มมิเตอร์ยังสามารถอ้างอิงไปยังมิเตอร์เสมือนจริงอื่น ๆ และกลุ่มมิเตอร์อื่น ๆ
 
-Just like virtual meters, meter groups don't have units associated and consumption is calculated whenever the underlying physical meters receive consumption data.
+เช่นเดียวกับมิเตอร์เสมือนจริง, กลุ่มมิเตอร์ไม่มีหน่วยที่เชื่อมโยงและการบริโภคถูกคำนวณเมื่อมิเตอร์ทางกายภาพที่อยู่เบื้องหลังรับข้อมูลการบริโภค.
