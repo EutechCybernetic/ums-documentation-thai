@@ -7,7 +7,7 @@
     * [มิเตอร์](readme/concepts/meters.md)
     * [มิเตอร์เสมือนจริง](readme/concepts/virtual-meters.md)
     * [กลุ่มมิเตอร์](readme/concepts/meter-groups.md)
-    * [การอ่าน, การบริโภคและความต้องการ](readme/concepts/readings-consumption-and-demand.md)
+    * [การอ่านค่า, การบริโภคและความต้องการ](readme/concepts/readings-consumption-and-demand.md)
     * [แท็ก](readme/concepts/tags.md)
     * [แท็ก ประกับ กลุ่มมิเตอร์](readme/concepts/tags-vs-meter-groups.md)
     * [สถานที่](readme/concepts/locations.md)

@@ -1,5 +1,5 @@
-# การกำหนดค่ากลุ่มมิเตอร์
+# Configuring Meter Groups
 
-กลุ่มมิเตอร์นั้นเหมือนกับมิเตอร์เสมือนทุกประการ ยกเว้นส่วนของปัจจัยการขยายที่สามารถรวมกลุ่มมิเตอร์และมิเตอร์เสมือนอื่น ๆ ได้
+Meter groups are exactly like virtual meters, except that the scaling factor section can include other meter group and virtual meters as well.
 
-โปรดทราบว่ากลุ่มมิเตอร์ไม่มีหน่วยที่แนบมา พวกเขาจะถูกคำนวณเสมอในหน่วยฐานสำหรับประเภทสาธารณูปโภคที่เลือก
+Note that meter groups do not have units attached. They will always be calculated in the base unit for the selected utility type.

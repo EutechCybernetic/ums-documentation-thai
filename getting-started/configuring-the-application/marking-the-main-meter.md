@@ -1,25 +1,26 @@
-# การทำเครื่องหมายเมตรหลัก
+# Marking The Main Meter
 
-เมื่อคุณมีเมตรหลักและเมตรย่อย คุณอาจจำเป็นต้องทำเครื่องหมายเมตรที่เฉพาะเจาะจงเป็นเมตรหลักสำหรับสถานที่นั้นซึ่งจะใช้ในการติดตามการบริโภคในสถานที่นั้น
+When you have parent meters and sub meters, you may need to mark a specific meter as the main meter for that location which would be used to track the consumption in that location.
 
-เพื่อทำสิ่งนี้ ไปที่ 'ขั้นสูง' ในแถบด้านข้าง แล้วไปที่แท็บ 'การจับคู่เมตรกับแท็ก'
+To do this, go to 'Advanced' in the sidebar and then the 'Meter To Tag Mapping' tab.
 
-ที่นี่ เลือกประเภทสาธารณูปโภค แล้วเพิ่มการจับคู่ใหม่
+Over here, choose the utility type, and then add a new mapping.
 
-เลือก 'สถานที่' เป็นประเภทแท็ก แล้วเลือกสถานที่
+Select 'Location' as the tag type and then choose the location.
 
-ภายใต้ 'ประเภททรัพยากร' เลือกประเภทเมตร (เมตรปกติ เมตรเสมือนจริง หรือกลุ่มเมตร) ที่คุณต้องการจับคู่กับสถานที่
+Under 'Resource Type' choose which type of meter (normal meter, virtual meter or meter group) that you wish to map to the location.
 
-จากนั้น ในส่วน 'ทรัพยากร' เลือกเมตรหรือกลุ่มที่เฉพาะเจาะจงที่คุณต้องการจับคู่
+Then, in the 'Resource' section, select the specific meter or group you wish to map.
 
-ส่งการเปลี่ยนแปลงของคุณ
+Submit your changes.
 
-เมตรนี้ (หรือกลุ่ม) ตอนนี้เป็นเมตรหลักสำหรับสถานที่นั้น
+This meter (or group) is now the main meter for that location.
 
-เมื่อคุณเลือกสถานที่สำหรับดูข้อมูลการบริโภค เมตรนี้จะถูกใช้ในการบริโภค
+Whenever you select a location for viewing consumption data, this meter's consumption will be used.
 
 
 
 {% hint style="info" %}
-สิ่งนี้ใช้ได้เฉพาะกับสถานที่นั้น ไม่ใช่สถานที่ย่อยใดๆ คุณต้องจับคู่เมตรหลักแยกต่างหากสำหรับสถานที่ย่อย หากสถานที่ย่อยเหล่านั้นยังมีบอร์ดจ่ายไฟหรือประเภทเมตรหลักอื่นๆ อยู่ในนั้น
+This applies only to that location. Not any sub location. You need to separately map a main meter for sub locations, if those sub locations also have distribution boards or other kinds of parent meters in it
 {% endhint %}
+

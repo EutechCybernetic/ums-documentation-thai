@@ -1,34 +1,38 @@
 ---
 description: >-
-  ในส่วนของแดชบอร์ด คุณสามารถกำหนดค่าแดชบอร์ดหลาย ๆ แดชบอร์ด และแต่ละแดชบอร์ดสามารถมีวิดเจ็ตหลาย ๆ ตัวอยู่บนมัน
+  In the dashboard section you can configure multiple dashboards and each
+  dashboard can have multiple widgets on it.
 ---
 
-# แดชบอร์ด
+# Dashboards
 
-เริ่มต้นด้วยการเลือกแดชบอร์ดจากแถบด้านข้าง
+Start by selecting the dashboard from the sidebar
 
 <div align="left"><figure><img src="../../.gitbook/assets/image (5).png" alt="" width="243"><figcaption></figcaption></figure></div>
 
-ในพื้นที่หลัก คุณสามารถเห็นวิดเจ็ตที่ถูกเพิ่มเข้าไปในแดชบอร์ด (ถ้ามี)
+In the main area, you can see the widgets that have been added to the dashboard (if any).
 
-ถ้าคุณมีสิทธิ์ คุณสามารถแก้ไขแดชบอร์ดและเพิ่ม/ปรับขนาด/ลบ/กำหนดค่าวิดเจ็ต
+If you have permissions, you can edit the dashboard and add/resize/remove/configure widgets.
 
-เพื่อทำการแก้ไขแดชบอร์ด คุณต้องเข้าสู่โหมด 'แก้ไข'
+To make modifications to the dashboard, you need to go into 'Edit' mode.
 
-คลิกที่ไอคอน 'ดินสอ' ที่มุมขวาบนของหน้าจอเพื่อเข้าสู่โหมดแก้ไข
+Click on the 'pencil' icon on the top right corner of the screen to go into edit mode.
 
 ![](<../../.gitbook/assets/image (6).png>)
 
-เมื่อเข้าสู่โหมดแก้ไข คุณสามารถแก้ไขวิดเจ็ต ปรับขนาด ลบ และเพิ่มวิดเจ็ตใหม่
+
+
+Once in edit mode, you can edit widgets, resize them, delete them and add new widgets.
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-เมื่อเพิ่มวิดเจ็ตใหม่ คุณสามารถเลือกจากห้องสมุดของวิดเจ็ตที่มีอยู่
+When adding new widgets, you can choose from the library of available widgets.
 
 {% hint style="info" %}
-วิดเจ็ตที่มีในห้องสมุดจะแตกต่างกัน และอาจมีวิดเจ็ตที่กำหนดเองที่ถูกสร้างขึ้นเฉพาะสำหรับการติดตั้งนั้น
+The widgets available in the library will vary and may contain custom widgets that were built specifically for that installation
 {% endhint %}
 
-วิดเจ็ต 'การบริโภค' เป็นวิดเจ็ตมาตรฐานที่มาพร้อมกับ UMS และมีตัวเลือกการวิเคราะห์และการแสดงผลที่ยืดหยุ่นภายในมัน&#x20;
+The 'Consumption' widget is the standard widget that comes with UMS and has a lot of flexible analytics and visualization options within it.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
