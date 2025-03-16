@@ -1,22 +1,22 @@
-# Understanding the user interface
+# ทำความเข้าใจหน้าตาผู้ใช้งาน
 
-_Note: Like all applications, UMS will constantly be updated and improved and the interface may change a little between versions - however the concepts are all the same_
+_หมายเหตุ: เช่นเดียวกับทุกๆ แอปพลิเคชัน UMS จะถูกอัปเดตและปรับปรุงอย่างต่อเนื่อง และหน้าตาผู้ใช้งานอาจจะเปลี่ยนแปลงเล็กน้อยระหว่างเวอร์ชัน - แต่แนวคิดทั้งหมดยังคงเดิม_
 
-The main interface for the UMS application looks like this:
+หน้าตาผู้ใช้งานหลักสำหรับแอปพลิเคชัน UMS จะมีลักษณะดังนี้:
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-The right side is the content area and the left side is your navigation sidebar.
+ด้านขวาคือพื้นที่เนื้อหาและด้านซ้ายคือแถบนำทางของคุณ
 
-You can use the sidebar to navigate through the different parts of the application and the content for each part is on the right side.
+คุณสามารถใช้แถบนำทางเพื่อเลือกเมนูต่างๆ ของแอปพลิเคชัน และเนื้อหาสำหรับแต่ละส่วนจะอยู่ที่ด้านขวา
 
 
 
-The main sections of the application are:
+ส่วนหลักของแอปพลิเคชันคือ:
 
-1. Dashboards - multiple dashboards can be configured and each can have its own collection of widgets on it that can be customized
-2. Configuration - this section of the application lets you configure various elements of the application - all meter and tag and related configuration is done here.&#x20;
-3. Advanced - access to advanced operational and admin level features
-4. Utility Types - each utility type will have its own section in the sidebar that lets you inspect
-   1. meteres related to that utility type
-   2. explore tags related to that utility type
+1. แดชบอร์ด - สามารถตั้งค่าแดชบอร์ดหลายๆ อัน และแต่ละอันสามารถมีวิดเจ็ตที่สามารถปรับแต่งได้
+2. การตั้งค่า - ส่วนนี้ของแอปพลิเคชันจะช่วยให้คุณสามารถตั้งค่าองค์ประกอบต่างๆ ของแอปพลิเคชัน - การตั้งค่าทั้งหมดเกี่ยวกับเมตรและแท็กและการตั้งค่าที่เกี่ยวข้องทั้งหมดจะทำที่นี่
+3. ขั้นสูง - เข้าถึงคุณสมบัติการดำเนินการและระดับผู้ดูแลระบบขั้นสูง
+4. ประเภทยูทิลิตี้ - แต่ละประเภทยูทิลิตี้จะมีส่วนของตัวเองในแถบนำทางที่ช่วยให้คุณตรวจสอบ
+   1. เมตรที่เกี่ยวข้องกับประเภทยูทิลิตี้นั้น
+   2. สำรวจแท็กที่เกี่ยวข้องกับประเภทยูทิลิตี้นั้น
