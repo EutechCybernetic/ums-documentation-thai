@@ -1,11 +1,11 @@
-# การตั้งค่าแอปพลิเคชัน
+# Configuring the application
 
-ส่วนนี้จะแนะนำคุณวิธีการตั้งค่าและกำหนดค่าแอปพลิเคชัน
+This section will guide you through setting up and configuring the application.
 
-คุณสามารถเข้าถึงส่วนนี้ได้โดยคลิกที่ 'การตั้งค่า' ในแถบข้างในแอปพลิเคชัน UMS
+You can access this section by clicking on 'Configuration' in the sidebar in the UMS application.
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt="" width="157"><figcaption></figcaption></figure>
 
-หน้าการตั้งค่าถูกแบ่งออกเป็นหลายแท็บและควรจะดูเหมือนนี้:
+The configuration page is divided into multiple tabs and should look like this:
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-12-17 at 4.52.53 PM.png" alt=""><figcaption></figcaption></figure>
