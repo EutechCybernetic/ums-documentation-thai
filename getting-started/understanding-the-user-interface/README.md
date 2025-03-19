@@ -1,22 +1,22 @@
-# Understanding the user interface
+# ทำความเข้าใจหน้าตาผู้ใช้งาน
 
-_Note: Like all applications, UMS will constantly be updated and improved and the interface may change a little between versions - however the concepts are all the same_
+_หมายเหตุ: เช่นเดียวกับทุกๆแอปพลิเคชัน, UMS จะถูกอัปเดตและปรับปรุงอย่างต่อเนื่องและหน้าตาอาจจะมีการเปลี่ยนแปลงเล็กน้อยระหว่างรุ่น - แต่แนวคิดยังคงเหมือนเดิม_
 
-The main interface for the UMS application looks like this:
+หน้าตาหลักของแอปพลิเคชัน UMS มีลักษณะดังนี้:
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-The right side is the content area and the left side is your navigation sidebar.
+ด้านขวาคือพื้นที่เนื้อหาและด้านซ้ายคือแถบนำทางของคุณ
 
-You can use the sidebar to navigate through the different parts of the application and the content for each part is on the right side.
+คุณสามารถใช้แถบด้านข้างเพื่อนำทางผ่านส่วนต่างๆของแอปพลิเคชันและเนื้อหาสำหรับแต่ละส่วนจะอยู่ทางด้านขวา
 
 
 
-The main sections of the application are:
+ส่วนหลักของแอปพลิเคชันคือ:
 
-1. Dashboards - multiple dashboards can be configured and each can have its own collection of widgets on it that can be customized
-2. Configuration - this section of the application lets you configure various elements of the application - all meter and tag and related configuration is done here.&#x20;
-3. Advanced - access to advanced operational and admin level features
-4. Utility Types - each utility type will have its own section in the sidebar that lets you inspect
-   1. meteres related to that utility type
-   2. explore tags related to that utility type
+1. แดชบอร์ด - สามารถกำหนดค่าแดชบอร์ดหลายๆอันและแต่ละอันสามารถมีวิดเจ็ตที่สามารถปรับแต่งได้
+2. การกำหนดค่า - ส่วนนี้ของแอปพลิเคชันให้คุณกำหนดค่าส่วนต่างๆของแอปพลิเคชัน - การกำหนดค่าเมตรและแท็กและสิ่งที่เกี่ยวข้องทั้งหมดจะทำที่นี่.&#x20;
+3. ขั้นสูง - เข้าถึงคุณสมบัติการดำเนินการและระดับผู้ดูแลระบบขั้นสูง
+4. ประเภทยูทิลิตี้ - แต่ละประเภทยูทิลิตี้จะมีส่วนของตัวเองในแถบด้านข้างที่ให้คุณตรวจสอบ
+   1. เมตรที่เกี่ยวข้องกับประเภทยูทิลิตี้นั้น
+   2. สำรวจแท็กที่เกี่ยวข้องกับประเภทยูทิลิตี้นั้น
