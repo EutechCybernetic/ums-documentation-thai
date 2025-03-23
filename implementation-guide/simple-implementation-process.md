@@ -1,10 +1,10 @@
-# กระบวนการใช้งานแบบง่าย
+# กระบวนการใช้งานง่ายๆ
 
-สำหรับการใช้งานแบบง่าย (เมตรที่เป็นอิสระและไม่มีเมตรย่อย) การใช้งานจะเป็นไปอย่างตรงไปตรงมา
+สำหรับการใช้งานที่ง่ายๆ (เมตรที่เป็นอิสระไม่มีเมตรย่อย) การใช้งานจะตรงไปตรงมา
 
 
 
-1. กำหนดค่าประเภทยูทิลิตี้ ดูที่ [configuring-utility-types.md](../getting-started/configuring-the-application/configuring-utility-types.md "mention")
+1. กำหนดค่าประเภทสาธารณูปโภค ดูที่ [configuring-utility-types.md](../getting-started/configuring-the-application/configuring-utility-types.md "mention")
 2. กำหนดค่าเบสไลน์
 3. กำหนดค่าเมตร ดูที่ [configuring-meters.md](../getting-started/configuring-the-application/configuring-meters.md "mention")
 4. ตั้งค่าการรวมเข้าด้วยกันสำหรับเมตร
