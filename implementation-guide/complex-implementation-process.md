@@ -1,10 +1,10 @@
-# กระบวนการใช้งานที่ซับซ้อน
+# กระบวนการดำเนินการที่ซับซ้อน
 
-กระบวนการใช้งานที่ซับซ้อนนี้เหมือนกับกระบวนการใช้งานที่ง่าย ยกเว้นขั้นตอนที่สำคัญเพิ่มเติมหนึ่งขั้นตอน: การทำแผนที่เมตรไปยังสถานที่
+กระบวนการดำเนินการที่ซับซ้อนนี้เหมือนกับกระบวนการดำเนินการง่าย ๆ ยกเว้นขั้นตอนที่สำคัญเพิ่มเติมหนึ่งขั้นตอน: การทำแผนที่เมตรไปยังสถานที่
 
-* กำหนดค่าเมตร ดู [configuring-meters.md](../getting-started/configuring-the-application/configuring-meters.md "mention")
-* ตั้งค่าการรวมเมตร
-* ตั้งค่าแท็ก, เมตรเสมือนหรือกลุ่มเมตร (ดู [configuring-virtual-meters.md](../getting-started/configuring-the-application/configuring-virtual-meters.md "mention"), [configuring-meter-groups.md](../getting-started/configuring-the-application/configuring-meter-groups.md "mention"), [configuring-tags.md](../getting-started/configuring-the-application/configuring-tags.md "mention"))
+* กำหนดค่าเมตร ดูที่ [configuring-meters.md](../getting-started/configuring-the-application/configuring-meters.md "mention")
+* ตั้งค่าการรวมเข้ากับเมตร
+* ตั้งค่าแท็ก, เมตรเสมือน หรือกลุ่มเมตร (ดูที่ [configuring-virtual-meters.md](../getting-started/configuring-the-application/configuring-virtual-meters.md "mention"), [configuring-meter-groups.md](../getting-started/configuring-the-application/configuring-meter-groups.md "mention"), [configuring-tags.md](../getting-started/configuring-the-application/configuring-tags.md "mention"))
 * ทำแผนที่เมตรไปยังสถานที่
 * ตั้งค่าแดชบอร์ดของคุณ
 
@@ -12,11 +12,11 @@
 
 ## ทำไมฉันต้องทำแผนที่เมตรไปยังสถานที่
 
-เมื่อคุณมีเมตรและเมตรย่อย การบริโภคสำหรับสถานที่อาจจะทำให้เกิดความสับสน เนื่องจากมันยังรวมเมตรย่อย ที่ค่าของมันอาจจะถูกคำนวณเข้าไปในเมตรหลักแล้ว
+เมื่อคุณมีเมตรและเมตรย่อย การบริโภคสำหรับสถานที่อาจจะทำให้เกิดความสับสนเนื่องจากมันยังรวมเมตรย่อย ที่ค่าของมันอาจจะถูกนำมาคำนวณในเมตรหลักแล้ว
 
-ยกตัวอย่างเช่น ถ้าเมตรหลักคือบอร์ดจ่ายไฟและเมตรย่อยคือเมตรสาธารณูปโภคภายในชั้น บอร์ดจ่ายไฟจะรวมการบริโภคของเมตรย่อยแล้ว
+ตัวอย่างเช่น ถ้าเมตรหลักคือบอร์ดจ่ายไฟและเมตรย่อยคือเมตรสาธารณูปโภคภายในชั้น บอร์ดจ่ายไฟจะรวมการบริโภคของเมตรย่อยแล้ว
 
-ดังนั้น ถ้าทั้งสองต่อกับสถานที่เดียวกัน มันจะนับการบริโภคสองครั้ง
+ดังนั้น ถ้าทั้งสองต่อไปยังสถานที่เดียวกัน มันจะนับการบริโภคบางส่วนสองครั้ง
 
 
 
@@ -25,7 +25,7 @@
 สำหรับทุกสถานที่ที่คุณต้องการติดตามการบริโภคและมีเมตรย่อย คุณสามารถทำเครื่องหมายหนึ่งในเมตรเป็นเมตรหลักสำหรับสถานที่นั้น
 
 {% hint style="info" %}
-เมตรหลักจะเป็นบอร์ดจ่ายไฟที่สถานที่นั้นๆ โดยทั่วไป
+เมตรหลักโดยทั่วไปจะเป็นบอร์ดจ่ายไฟที่สถานที่นั้น
 {% endhint %}
 
 คุณยังสามารถทำแผนที่เมตรเสมือนหรือกลุ่มเมตร
@@ -34,4 +34,4 @@
 
 
 
-ดูส่วน [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการทำแผนที่เมตรไปยังสถานที่.
+ดูที่ส่วน [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการทำแผนที่เมตรไปยังสถานที่
