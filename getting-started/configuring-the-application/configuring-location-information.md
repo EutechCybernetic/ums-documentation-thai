@@ -1,9 +1,9 @@
-# การกำหนดค่าข้อมูลสถานที่
+# Configuring Location Information
 
-ข้อมูลสถานที่ที่มีใน UMS ถูกกำหนดค่าเป็นส่วนหนึ่งของแอปพลิเคชัน iviva Location.
+Location data available in UMS is configured as part of the iviva Location application.
 
-ไม่สามารถแก้ไขต้นไม้สถานที่ภายในแอปพลิเคชัน UMS ได้
+The location tree is not editable within the UMS application itself.
 
-อย่างไรก็ตาม, คุณสามารถกำหนดค่าเบสไลน์สำหรับแต่ละส่วนของต้นไม้สถานที่
+However, you can configure baselines for each section of the location tree.
 
-คุณสามารถขยายต้นไม้และคลิกที่โหนดใดๆ เพื่อตั้งค่าเบสไลน์สำหรับโหนดนั้น
+You can expand the tree and click on any node to set baseline values for that node.
