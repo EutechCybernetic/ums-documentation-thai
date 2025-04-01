@@ -1,9 +1,9 @@
-# การรวมระบบ
+# Integrations
 
-UMS มีการรวมระบบที่สร้างขึ้นภายในเพื่อรับข้อมูลผ่านแอปพลิเคชัน iviva IBMS
+UMS has built-in integrations to acquire data via the iviva IBMS application.
 
-มันยังสามารถรับข้อมูลจากการรวมระบบที่สร้างบน Lucy
+It can also receive data from an integration built on Lucy.
 
-แอปพลิเคชันนี้ยังให้จุดสิ้นสุด API เพื่อรับข้อมูลการบริโภค
+The application also provides API end points to ingest consumption data.
 
-ติดต่อผู้จัดการบัญชีของคุณเพื่อเปิดใช้งานการรวมระบบเฉพาะ
+Contact your account manager to enable specific integrations.
