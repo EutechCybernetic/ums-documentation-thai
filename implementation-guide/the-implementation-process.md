@@ -1,46 +1,46 @@
-# The Implementation Process
+# กระบวนการการดำเนินการ
 
-How you implement a utility monitoring system will vary depending on:
+วิธีการที่คุณจะใช้ในการดำเนินการระบบตรวจสอบสาธารณูปโภคจะขึ้นอยู่กับ:
 
-1. How many meters you have
-2. How big an area or building (or multiple buildings) you plan on monitoring
+1. จำนวนเมตรที่คุณมี
+2. ขนาดของพื้นที่หรืออาคาร (หรือหลายอาคาร) ที่คุณวางแผนจะตรวจสอบ
 
 
 
 {% hint style="info" %}
-For the purpose of explanation - we will be using energy monitoring as an example but the same concepts will apply for every other utility type as well.
+เพื่อความเข้าใจ - เราจะใช้การตรวจสอบพลังงานเป็นตัวอย่าง แต่แนวคิดเดียวกันจะใช้ได้กับทุกประเภทของสาธารณูปโภคอื่น ๆ ด้วย
 {% endhint %}
 
 
 
-## Methodology
+## วิธีการ
 
-Setting up UMS can be done with  either a simple implementation or a complex implementation.
+การตั้งค่า UMS สามารถทำได้ด้วยการดำเนินการที่ง่ายหรือซับซ้อน
 
-Both use the same concepts and the outcomes are the same but complex implementations require more configuration and planning. Which one you use depends on how physical meters are installed and setup for the  workplace/office/building/precinct that is being monitored.
-
-
-
-## Complex Implementation
-
-In a complex implementation, physical meters are typically installed in a meter tree configuration.
-
-This means you have meters and some meters have sub-meters under it and those sub-meters can have their own sub-meters.
-
-Futher, different meters can represent different catgories of energy consumption.
-
-For example, you may have a meter that measures electricity to plug points and another that measures electricity for the AHU and cooling systems.
-
-In a complex implementation, meters may not be completely independent of other meters.
-
-You will need to define tags and meter groups and virtual meters to capture fine-grained information about how the consumption is distributed.
+ทั้งสองวิธีใช้แนวคิดเดียวกันและผลลัพธ์เหมือนกัน แต่การดำเนินการที่ซับซ้อนต้องการการกำหนดค่าและการวางแผนมากขึ้น วิธีที่คุณจะใช้ขึ้นอยู่กับวิธีการติดตั้งและตั้งค่าเมตรทางกายภาพสำหรับสถานที่ทำงาน / สำนักงาน / อาคาร / เขตที่กำลังถูกตรวจสอบ
 
 
 
-## Simple Implementation
+## การดำเนินการที่ซับซ้อน
 
-In a simple implementation you have a few meters that directly measure energy for specific areas.
+ในการดำเนินการที่ซับซ้อน เมตรทางกายภาพมักจะถูกติดตั้งในรูปแบบของต้นไม้เมตร
 
-There is no overlap in consumption readings between different meters. Each is independent.
+นั่นหมายความว่าคุณมีเมตรและบางเมตรมีเมตรย่อยอยู่ภายใต้ และเมตรย่อยเหล่านั้นสามารถมีเมตรย่อยของตัวเอง
 
-You may use tags to aggregate data from multiple meters that need to be logically grouped together.
+นอกจากนี้ เมตรที่แตกต่างกันสามารถแสดงความหมายถึงหมวดหมู่การบริโภคพลังงานที่แตกต่างกัน
+
+ตัวอย่างเช่น คุณอาจมีเมตรที่วัดความไฟฟ้าไปยังจุดเสียบปลั๊กและอีกหนึ่งที่วัดความไฟฟ้าสำหรับระบบ AHU และระบบทำความเย็น
+
+ในการดำเนินการที่ซับซ้อน เมตรอาจไม่ได้เป็นอิสระอย่างสมบูรณ์จากเมตรอื่น ๆ
+
+คุณจะต้องกำหนดแท็กและกลุ่มเมตรและเมตรเสมือนจริงเพื่อจับข้อมูลที่ละเอียดเกี่ยวกับวิธีการกระจายการบริโภค
+
+
+
+## การดำเนินการที่ง่าย
+
+ในการดำเนินการที่ง่าย คุณมีเมตรไม่กี่ตัวที่วัดพลังงานโดยตรงสำหรับพื้นที่เฉพาะ
+
+ไม่มีการซ้อนทับของการอ่านการบริโภคระหว่างเมตรที่แตกต่างกัน แต่ละตัวเป็นอิสระ
+
+คุณอาจใช้แท็กในการรวมข้อมูลจากหลายเมตรที่ต้องการจะถูกจับคู่กันในทางตรรกะ

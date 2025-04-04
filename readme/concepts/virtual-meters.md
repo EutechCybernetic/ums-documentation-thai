@@ -1,27 +1,27 @@
-# Virtual Meters
+# เมตรเสมือนจริง
 
-Virtual meters - or 'soft meters' - a meters that are defined in the software layer and have values that are derived from one more more physical meters. Often, a building may not have meters for every subsystem that needs to be measured - however you can often calculate the energy value for that subsystem by deriving the data from other pyhsical meters.
+เมตรเสมือนจริง - หรือ 'เมตรซอฟต์แวร์' - เป็นเมตรที่ถูกกำหนดในชั้นซอฟต์แวร์และมีค่าที่ได้มาจากหนึ่งหรือมากกว่าหนึ่งเมตรทางกายภาพ บ่อยครั้งที่อาคารอาจไม่มีเมตรสำหรับทุกๆ ระบบย่อยที่ต้องการวัด - แต่คุณสามารถคำนวณค่าพลังงานสำหรับระบบย่อยนั้นๆ ได้โดยการสืบทอดข้อมูลจากเมตรทางกายภาพอื่นๆ
 
-For example, if a floor has a meter for it (lets call it F1), and each of the units within the floor has its own meter (lets call them U1 and U2), then we can measure the total energy into the floor as well as the energy into each individual unit.
+ตัวอย่างเช่น ถ้าชั้นมีเมตรสำหรับมัน (เราเรียกว่า F1) และแต่ละหน่วยภายในชั้นมีเมตรของตัวเอง (เราเรียกว่า U1 และ U2) แล้วเราสามารถวัดพลังงานทั้งหมดที่เข้ามาในชั้นนั้น รวมถึงพลังงานที่เข้ามาในแต่ละหน่วย
 
-But what about the energy consumed by the common area on the floor? There's no separate meter to measure that. However we can _calculate_ it by taking the consumption from F1 and subtracting the consumptions from U1 and U2. The remaining energy is the energy of the common areas in the floor.
+แต่พลังงานที่ถูกบริโภคโดยพื้นที่ส่วนกลางในชั้นนั้นล่ะ? ไม่มีเมตรแยกเพื่อวัดสิ่งนี้ แต่เราสามารถ _คำนวณ_ ได้โดยการนำการบริโภคจาก F1 และลบด้วยการบริโภคจาก U1 และ U2 พลังงานที่เหลือคือพลังงานของพื้นที่ส่วนกลางในชั้น
 
-In this case, you can define a virtual meter called 'CA1' to represent energy consumption of common areas. And you can configure it to be based on the formula `F1 - U1 - U2`
+ในกรณีนี้ คุณสามารถกำหนดเมตรเสมือนจริงที่เรียกว่า 'CA1' เพื่อแทนการบริโภคพลังงานของพื้นที่ส่วนกลาง และคุณสามารถกำหนดค่าให้มันตามสูตร `F1 - U1 - U2`
 
-When configuring virtual meters, you need to specify a serving location, name and tags. In addition you need to specify what meters this virtual meter derives its data from and the scaling factor for each of those meters.
+เมื่อกำหนดค่าเมตรเสมือนจริง คุณต้องระบุตำแหน่งที่ให้บริการ ชื่อ และแท็ก นอกจากนี้คุณยังต้องระบุเมตรที่เมตรเสมือนจริงนี้สืบทอดข้อมูลของมันมาและปัจจัยการปรับขนาดสำหรับแต่ละเมตร
 
-Using the example above - `F1 - U1 - U2`, you would add the following 3 meters and corresponding scaling factor:
+ใช้ตัวอย่างข้างต้น - `F1 - U1 - U2`, คุณจะเพิ่ม 3 เมตรต่อไปนี้และปัจจัยการปรับขนาดที่สอดคล้องกัน:
 
-| Meter | Scaling Factor |
+| เมตร | ปัจจัยการปรับขนาด |
 | ----- | -------------- |
 | F1    | 1              |
 | U1    | -1             |
 | U2    | -1             |
 
-#### Units for virtual meters
+#### หน่วยสำหรับเมตรเสมือนจริง
 
-Virtual meters can be calculated from meters that have different units. All consumption for virtual meters are stored in the utility type's base unit. So if you have defined a virtual water meter and the `water` utility type has 'Imperial Gallons' as the base unit (ie, conversion factor of the unit is 1), then all of the virtual meter consumption data is calculated in Imperial Gallons regardless of the units of the meters that the virtual meter is dervied from.
+เมตรเสมือนจริงสามารถคำนวณจากเมตรที่มีหน่วยต่างๆ การบริโภคทั้งหมดสำหรับเมตรเสมือนจริงจะถูกเก็บในหน่วยฐานของประเภทสาธารณูปโภค ดังนั้นถ้าคุณได้กำหนดเมตรน้ำเสมือนจริงและประเภทสาธารณูปโภค `น้ำ` มี 'แกลลอนอิมพีเรียล' เป็นหน่วยฐาน (เช่น ปัจจัยการแปลงของหน่วยคือ 1) แล้วข้อมูลการบริโภคของเมตรเสมือนจริงทั้งหมดจะถูกคำนวณในแกลลอนอิมพีเรียล ไม่ว่าหน่วยของเมตรที่เมตรเสมือนจริงได้รับมาจากจะเป็นอย่างไร
 
-#### Calculating consumption
+#### การคำนวณการบริโภค
 
-Consumptions for virtual meters are automatically calculated whenever consumption data is recorded in any of the underlying meters.
+การบริโภคสำหรับเมตรเสมือนจริงจะถูกคำนวณอัตโนมัติเมื่อมีการบันทึกข้อมูลการบริโภคในเมตรทางกายภาพใดๆ

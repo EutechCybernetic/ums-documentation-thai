@@ -1,45 +1,43 @@
-# Readings, Consumption and Demand
+# การอ่านค่า, การบริโภค และ ความต้องการ
 
+ดังนั้นเราทราบว่าเมตรสามารถบันทึกข้อมูลการบริโภค และทั้งเมตรเสมือนจริงและกลุ่มเมตรสามารถคำนวณการบริโภคตามเมตรที่อยู่ภายใต้และตัวคูณการปรับขนาดของพวกเขา
 
+ดังนั้นหมายความว่า เฉพาะเมตรทางกายภาพเท่านั้นที่สามารถ _บันทึก_ การบริโภค สำหรับสิ่งอื่น ๆ การบริโภคถูก _คำนวณ_
 
-So we know that meters can record consumption data and that both virtual meters and meter groups can calculate consumption based on the underlying meters and their scaling multipliers.
+คุณจะบันทึกการบริโภคสำหรับเมตรทางกายภาพอย่างไร? มีวิธีหลายวิธี:
 
-So this means, only physical meters can _record_ consumption. For the other entities, consumption is _calculated_
+1. บันทึกการอ่านค่าเมตร
+2. บันทึกการบริโภค
+3. บันทึกการโหลด/ความต้องการ
 
-How do you record consumption for a physical meter? There are a few ways:&#x20;
+### การบันทึกการอ่านค่าเมตร
 
-1. Record meter readings
-2. Record consumption
-3. Record load/demand
+โดยการบันทึกการอ่านค่าเมตร - การอ่านค่าเมตรหมายถึงอย่างนั้นตรงๆ - การอ่านค่าบนเมตรทางกายภาพจริง นี่จะเป็นค่าสะสมที่เพิ่มขึ้นเสมอ เมื่อการอ่านค่าถูกบันทึก การบริโภคถูกคำนวณเป็นความแตกต่างระหว่างการอ่านค่าปัจจุบันและการอ่านค่าก่อนหน้า
 
-### Recording Meter Readings
+ข้อมูลการบริโภคถูกแทนค่าในระยะเวลาตั้งแต่การอ่านค่าครั้งสุดท้ายถึงการอ่านค่าปัจจุบัน และการเปลี่ยนแปลงในการบริโภคถูกสมมติว่าเป็นเชิงเส้นในช่วงเวลานี้
 
-By recording meter readings - meter readings are meant to be literally that - the reading on the actual physical meter. This will be a cummulative value that always increases. As readings get recorded, the consumption is calculated as the difference between the current reading and the previous readings.
+เพื่อให้แน่ใจว่ามีความแม่นยำ ตรวจสอบให้แน่ใจว่าช่วงระหว่างการอ่านค่าไม่นานเกินไป
 
-Consumption data is interpolated over the time from the last reading to the current reading and the change in consumption is assumed to be linear in this time interval.
-
-In order to ensure accuracy, make sure the interval between readings isn't too long.
-
-Readings can be recorded in a few ways:
+การอ่านค่าสามารถบันทึกได้หลายวิธี:
 
 1. API
-2. Built-in Integration
-3. Manually entering a reading in the interface
+2. การรวมที่มีอยู่แล้ว
+3. ป้อนค่าอ่านด้วยตนเองในอินเทอร์เฟซ
 
-See the 'Integrations' section for more information.
-
-
-
-### Recording Consumption
-
-Sometimes, meters may not give you the cumulative reading. For example, if you're recording data from an IoT energy meter, you may receive the actual consumption for a given time period. Its possible to directly record that consumption data as well. This can be done through the meter's API.
+ดูส่วน 'การรวม' สำหรับข้อมูลเพิ่มเติม
 
 
 
-### Recording Load or Demand
+### การบันทึกการบริโภค
 
-Some times with energy meters it may give you the current instantaneous _demand_. Consumption can be automatically calculated from the instantaenous demand.
+บางครั้ง เมตรอาจไม่ให้คุณอ่านค่าสะสม ตัวอย่างเช่น ถ้าคุณกำลังบันทึกข้อมูลจากเมตรพลังงาน IoT คุณอาจได้รับการบริโภคจริงสำหรับช่วงเวลาที่กำหนด มันเป็นไปได้ที่จะบันทึกข้อมูลการบริโภคนั้นๆ โดยตรงด้วย สิ่งนี้สามารถทำได้ผ่าน API ของเมตร
 
-When demand readings are recorded, the consumption is calculated for the period between two demand readings by calculating the 'area under the curve'. Trapezium rule is used, assuming linear growth in consumption between the two demand readings.
 
-That consumption is then interpolated in linear fashion across the time period.
+
+### การบันทึกการโหลดหรือความต้องการ
+
+บางครั้งกับเมตรพลังงาน อาจจะให้คุณ _ความต้องการ_ ขณะนี้ การบริโภคสามารถคำนวณอัตโนมัติจากความต้องการขณะนี้
+
+เมื่อการอ่านค่าความต้องการถูกบันทึก การบริโภคถูกคำนวณสำหรับช่วงระหว่างการอ่านค่าความต้องการสองครั้งโดยการคำนวณ 'พื้นที่ใต้เส้นโค้ง' กฎของ Trapezium ถูกใช้ โดยสมมติว่าการเติบโตเชิงเส้นในการบริโภคระหว่างการอ่านค่าความต้องการสองครั้ง
+
+การบริโภคนั้นจะถูกแทนค่าในแบบเชิงเส้นตลอดช่วงเวลา
