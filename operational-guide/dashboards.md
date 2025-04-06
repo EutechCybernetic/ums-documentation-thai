@@ -1,32 +1,32 @@
-# แดชบอร์ด
+# Dashboards
 
-แอปพลิเคชัน UMS ในปัจจุบันมีแดชบอร์ดที่สามารถปรับแต่งได้ 3 แบบ ซึ่งสามารถเข้าถึงได้จากแถบด้านข้าง
+The UMS application currently provides 3 customizable dashboards that are accessible from the side bar.
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-02-10 at 08.32.47.png" alt="" width="235"><figcaption></figcaption></figure>
 
-โปรดทราบว่าแดชบอร์ดเหล่านี้ถูกกำหนดค่าโดยผู้ใช้ที่เป็นผู้ดูแลระบบและสามารถใช้งานได้สำหรับผู้ใช้ทั้งหมดที่มีสิทธิ์เข้าถึงแอปพลิเคชัน UMS
+Note that these dashboards are configured by an admin user and are available to all users who have access to the UMS application.
 
 {% hint style="info" %}
-หากคุณต้องการเปลี่ยนจำนวนของแดชบอร์ดที่มีอยู่หรือเปลี่ยนชื่อของแดชบอร์ด กรุณาติดต่อผู้จัดการบัญชี iviva ของคุณเพื่อขอความช่วยเหลือ
+If you need to change the number of dashboards available or change the titles of them, contact your iviva account manager for assistance
 {% endhint %}
 
 
 
-หากผู้ใช้ต้องการแดชบอร์ดที่ปรับแต่งเอง สามารถสร้างอินเทอร์เฟซพอร์ทัลใหม่ให้กับผู้ใช้ใน iviva
+If a user wants their own custom dashboard, a new portal interface can be created for them in iviva.
 
-แดชบอร์ดเหล่านี้ทำงานเหมือนแดชบอร์ด iviva ปกติ แต่มีความแตกต่างคือการเปลี่ยนแปลงที่ผู้ใช้ทำจะถาวรสำหรับผู้ใช้ทั้งหมดของแอปพลิเคชัน
+These dashboards function like regular iviva dashboards with the difference that any changes made by the user are permanent for all users of the application.
 
-คุณสามารถเพิ่ม/แก้ไข/ลบวิดเจ็ตใด ๆ ในแดชบอร์ดนี้
+You can add/edit/remove any widget to this dashboard.
 
-ไม่จำเป็นต้องจำกัดเฉพาะวิดเจ็ตที่เกี่ยวข้องกับ UMS
+It need not be limited to UMS related widgets.
 
 
 
-## การแก้ไขแดชบอร์ด
+## Editing the dashboard
 
-คุณสามารถใช้ไอคอน 'ดินสอ' ที่มุมขวาบนของหน้าจอเพื่อแก้ไขแดชบอร์ด
+You can use the 'pencil' icon on the top right corner of the screen to edit the dashboard.
 
-การเข้าสู่โหมด 'แก้ไข' จะช่วยให้คุณสามารถจัดเรียงวิดเจ็ตได้ง่ายขึ้น ปรับแต่งวิดเจ็ต ลบวิดเจ็ต และเพิ่มวิดเจ็ตใหม่
+Going into 'Edit' mode lets you re-arrange widgets easily, re-configure them, remove them and add new widgets.
 
 
 
@@ -34,56 +34,56 @@
 
 
 
-เมื่ออยู่ในโหมดแก้ไข คุณมีตัวเลือกต่อไปนี้:
+Once in edit mode, you have the following options:
 
 <figure><img src="../.gitbook/assets/Screenshot 2025-01-28 at 21.13.37.png" alt=""><figcaption></figcaption></figure>
 
 
 
-แอป UMS มีวิดเจ็ต 2 แบบ
+The UMS app itself provides 2 widgets.
 
 
 
-### วิดเจ็ตการวิเคราะห์การบริโภค
+### Consumption Analysis Widget
 
-วิดเจ็ตนี้ให้เครื่องมือวิเคราะห์การบริโภคทั้งหมดในรูปแบบของวิดเจ็ต
+This widget provides the full consumption analysis tool as a widget.
 
-คุณสามารถบันทึกฟิลเตอร์ในเครื่องมือและมันจะถูกบันทึกอัตโนมัติในวิดเจ็ต
+You can save the filters in the tool and it will automatically get saved in the widget.
 
-ดู [consumption-analysis-tool.md](consumption-analysis-tool.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับวิธีการใช้งานวิดเจ็ตนี้
+See [consumption-analysis-tool.md](consumption-analysis-tool.md "mention") for more information about how to use this widget.
 
 
 
-### การเปรียบเทียบเบสไลน์ของยูทิลิตี้
+### Utility Baseline Comparison
 
-วิดเจ็ตนี้ให้คุณมองเห็นภาพรวมของการบริโภคของประเภทยูทิลิตี้ต่าง ๆ ได้ในภาพรวม
+This widget gives you an at-glance view of the overall consumption of various utility types.
 
 {% hint style="info" %}
-ดู [utility-types.md](../readme/concepts/utility-types.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการกำหนดค่าประเภทยูทิลิตี้ที่แตกต่างกัน
+See [utility-types.md](../readme/concepts/utility-types.md "mention") for more information on configuring different utility types.
 {% endhint %}
 
-วิดเจ็ตนี้แสดงการบริโภครวมสำหรับช่วงเวลาและสถานที่ที่กำหนดสำหรับแต่ละยูทิลิตี้และวิธีการเปรียบเทียบกับเบสไลน์ที่เลือก
+It shows the total consumption for the given time period and location for each utility and how it compares to the corresponding baseline that was selected
 
 
 
-มีวิดเจ็ตการเปรียบเทียบเบสไลน์ของยูทิลิตี้ 2 แบบ แต่ทั้งสองแบบทำงานในทางเดียวกัน
+There 2 variations of the utility baseline comparison widget but they both work the same way.
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-ใช้ฟิลเตอร์สถานที่เพื่อเลือกสถานที่ที่คุณต้องการดูข้อมูลเปรียบเทียบ โดยทั่วไปคุณจะเลือกอาคารหรือไซต์ที่นี่
+Use the location filter to choose the location that you wish to see comparison data for. You would generally pick a building or site here.
 
 {% hint style="info" %}
-ดู [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับวิธีทำให้ข้อมูลนี้ถูกต้อง
+See [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") for more information on how to make this data accurage
 {% endhint %}
 
-คุณยังสามารถเลือกเบสไลน์เพื่อเปรียบเทียบและช่วงวันที่เริ่มต้น
+You can also pick a baseline to compare against and a default date range.
 
-เมื่อคุณทำการเปลี่ยนแปลง ไอคอน 'pin' จะปรากฏที่มุมขวาบน
+When you make changes, a 'pin' icon appears on the top right.
 
-คลิกที่ไอคอนนั้นเพื่อ 'ปัก' การเปลี่ยนแปลงในวิดเจ็ตนี้
+Click that icon to 'pin' the changes on this widget.
 
-เมื่อคุณปักการเปลี่ยนแปลง คุณกำลังบันทึกฟิลเตอร์เหล่านี้เพื่อให้โหลดทุกครั้งที่แดชบอร์ดโหลด
+When you pin changes, you are saving those filters so they are loaded everytime the dashboard loads.
 
-การเปลี่ยนแปลงนี้จะถูกนำไปใช้สำหรับผู้ใช้ทั้งหมดเมื่อทำในแดชบอร์ดในแอปพลิเคชัน UMS
+This change is applied for all users when done in a dashboard in the UMS application.
 
-โปรดทราบว่าคุณสามารถเพิ่มวิดเจ็ตเดียวกันหลายครั้งและแต่ละวิดเจ็ตสามารถมีค่าที่ปักต่างกันได้
+Note that you can add the same widget multiple times and each can have different pinned values.

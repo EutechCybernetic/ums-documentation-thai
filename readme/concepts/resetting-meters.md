@@ -1,9 +1,11 @@
-# การตั้งค่ามิเตอร์ใหม่
+# Resetting Meters
 
-สำหรับมิเตอร์ที่บันทึกการอ่านค่าสะสม, การตั้งค่ามิเตอร์ใหม่จะเกิดขึ้นโดยอัตโนมัติ
+For meters that record cummulative readings, meter resets will occur automatically.
 
-หากการอ่านค่าล่าสุดน้อยกว่าค่าก่อนหน้านี้, จะมีช่วงว่างชั่วคราวในค่าพลังงานในเวลาที่ตั้งค่าใหม่
+If the latest reading is less than the previous one, there will be a temporary  gap in the energy values at the time of the reset.
 
-ต่อมา, เมื่อมีการอ่านค่าถัดไปเข้ามา - ค่านี้จะถูกคำนวณอิงจากการอ่านค่าก่อนหน้าที่ถูกส่ง
+Subsequently, when the next reading comes in - it will be calculated based on the previous reading that was sent.
 
-โปรดทราบว่าการอ่านค่า '0' (ศูนย์) จะถูกละทิ้งอย่างเงียบ ๆ และถูกจัดการเป็นข้อผิดพลาดในการสื่อสารหรือข้อผิดพลาดในการรวมข้อมูล ดังนั้นหากมีการบันทึกการอ่านค่าในขณะที่ตั้งค่าใหม่, ค่านี้จะไม่ถูกใช้จนกว่าการอ่านค่าถัดไปจะถูกส่ง
+
+
+Note that  readings of '0' (zero) are silently dropped and treated as communciation errors or integration errors. So if a reading is recorded at the moment of a reset, it will not be used until the next reading is sent.
