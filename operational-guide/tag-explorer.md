@@ -1,41 +1,41 @@
-# Tag Explorer
+# สำรวจแท็ก
 
-The tag explorer is where you can analyze consumption based on tags that you have defined.
+สำรวจแท็กคือสถานที่ที่คุณสามารถวิเคราะห์การบริโภคตามแท็กที่คุณได้กำหนดไว้
 
-The location hierarchy (defined within iviva's Location application) is also shown here and lets you analyze data at each location in the hierarchy.
+ลำดับชั้นของสถานที่ (ที่กำหนดไว้ในแอปพลิเคชัน Location ของ iviva) จะแสดงที่นี่และให้คุณวิเคราะห์ข้อมูลที่แต่ละสถานที่ในลำดับชั้น
 
 {% hint style="info" %}
-See [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") for information on getting accurate location-based consumption data
+ดู [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") สำหรับข้อมูลเกี่ยวกับการรับข้อมูลการบริโภคตามสถานที่ที่ถูกต้อง
 {% endhint %}
 
 
 
-The Tag Explorer looks like this:
+สำรวจแท็กจะมีลักษณะดังนี้:
 
 <figure><img src="../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
 
-On the left side you have all of your tags, organized in a tree structure and separated by tag type.
+ทางด้านซ้ายคุณมีแท็กทั้งหมดของคุณ ซึ่งถูกจัดเรียงในโครงสร้างต้นไม้และแยกตามประเภทแท็ก
 
-You can click on any tag to view consumption data about that tag. The right side shows the [consumption-analysis-tool.md](consumption-analysis-tool.md "mention") to view consumption data about that tag.
-
-
-
-You can select a single tag from each tag type and view consumption about it. If you select a parent tag, the consumption data will have the aggregated data from all child tags as well.
-
-You can also combine tags from different tag types.
+คุณสามารถคลิกที่แท็กใด ๆ เพื่อดูข้อมูลการบริโภคเกี่ยวกับแท็กนั้น ด้านขวาแสดง [consumption-analysis-tool.md](consumption-analysis-tool.md "mention") เพื่อดูข้อมูลการบริโภคเกี่ยวกับแท็กนั้น
 
 
 
-In the example below:
+คุณสามารถเลือกแท็กเดียวจากแต่ละประเภทแท็กและดูข้อมูลการบริโภคเกี่ยวกับมัน หากคุณเลือกแท็กแม่ ข้อมูลการบริโภคจะมีข้อมูลที่รวมกันจากแท็กลูกทั้งหมดด้วย
+
+คุณยังสามารถรวมแท็กจากประเภทแท็กที่แตกต่างกัน
+
+
+
+ในตัวอย่างด้านล่าง:
 
 <figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
 
-We have selected to view consumption data for all 'equipment' tagged items that also have the location as 'Precinct1'
+เราได้เลือกดูข้อมูลการบริโภคสำหรับสินค้าที่มีแท็ก 'อุปกรณ์' ทั้งหมดที่มีสถานที่เป็น 'Precinct1'
 
-You can select a single tag from each tag group and see data that intersects all the selected tags.
+คุณสามารถเลือกแท็กเดียวจากแต่ละกลุ่มแท็กและดูข้อมูลที่ตัดกันทั้งหมดของแท็กที่เลือก
 
-You can unselect a tag by clicking again on it.
+คุณสามารถยกเลิกการเลือกแท็กโดยคลิกอีกครั้งที่แท็กนั้น
 
 
 
-If you scroll down below the consumption analysis tool you can see the list of meters, virtual meters and meter groups that contributed to the selected tag (or tags).
+หากคุณเลื่อนลงด้านล่างเครื่องมือวิเคราะห์การบริโภค คุณสามารถดูรายชื่อเมตร, เมตรเสมือนและกลุ่มเมตรที่มีส่วนร่วมในแท็กที่เลือก (หรือแท็ก)
