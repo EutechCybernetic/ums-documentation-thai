@@ -1,39 +1,42 @@
-# การกำหนดค่าแท็ก
+# Configuring Tags
 
-ก่อนที่คุณจะสามารถใช้แท็กกับเมตร, เมตรเสมือนและกลุ่ม, คุณต้องกำหนดรายการแท็กของคุณก่อน
+Before you can apply tags to meters, virtual meters and groups, you first need to define your tag list.
 
 
 
-## ประเภทแท็ก
+## Tag Types
 
-คุณเริ่มต้นด้วยการกำหนดประเภทแท็กแล้วเพิ่มแท็กภายในประเภทแท็กนั้น
+You start by defining the tag types and then add tags within that tag type.
 
-ประเภทแท็กอธิบายหมวดหมู่สำหรับแท็ก
+Tag types describe the category for tags.
 
-ตัวอย่าง: ระบบ, ผู้เช่า, การใช้น้ำ
+Examples: Systems, Tenant, Water Usage
 
-ชื่อเหล่านี้เป็นสิ่งที่คุณสามารถตัดสินใจได้
+These names are arbitrary and can be decided by you.
 
-เพื่อเริ่มต้น, ไปที่ส่วน 'การกำหนดค่า' ในแถบข้าง แล้วคลิกที่แท็บ 'แท็ก'
+To start, go to the 'Configuration' section in the sidebar and then click on the 'Tags' tab.
 
-คลิกที่ 'เพิ่มประเภทแท็ก'
+Click on 'Add Tag Type'.
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure>
 
-คุณสามารถระบุชื่อประเภทและแท็กเริ่มต้นที่จะเพิ่มสำหรับประเภทนั้น
+You can specify the type name and the initial tag to add for that type.
 
-แม้ว่าจะเรียกว่า 'แท็กหลัก' คุณสามารถมีแท็กหลักหลายแท็ก สามารถเพิ่มเติมได้ในภายหลัง
+Even though its called 'Parent Tag' you can have multiple parent tags. More can be added later.
 
 
 
-## แท็ก
+## Tags
 
-เมื่อคุณกำหนดประเภทแท็ก, ภายใต้ประเภทนั้น, คุณสามารถกำหนดแท็กหนึ่งหรือมากกว่าสำหรับประเภทนั้น
+Once you define tag types, under that type, you can define one or more tags for that type.
 
-แท็กสามารถมีโครงสร้างเป็นต้นไม้ พร้อมแท็กย่อยและแท็กย่อยย่อย และอื่น ๆ ภายใต้แต่ละแท็ก
+Tags can have a tree structure with sub tags and sub-sub tags and so on, under each tag.
 
-คุณสามารถย้ายเมาส์ไปที่แท็กเพื่อแก้ไข, ลบ หรือเพิ่มแท็กย่อยให้กับมัน
+You can move the mouse over a tag to edit, delete or add sub-tags to it.
 
-หน้าจอนี้แสดงวิธีการใช้ตัวแก้ไขแท็ก
+This screen shows how to use the tag editor.
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+
+
+

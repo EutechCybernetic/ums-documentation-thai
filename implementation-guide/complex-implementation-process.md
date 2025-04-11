@@ -1,10 +1,10 @@
 # กระบวนการดำเนินการที่ซับซ้อน
 
-กระบวนการดำเนินการที่ซับซ้อนนี้เหมือนกับกระบวนการดำเนินการง่าย ๆ ยกเว้นขั้นตอนเพิ่มเติมหนึ่งขั้นตอนที่สำคัญ: การทำแผนที่เมตรไปยังสถานที่
+กระบวนการดำเนินการที่ซับซ้อนนี้เหมือนกับกระบวนการดำเนินการง่าย ๆ ยกเว้นขั้นตอนหลักที่เพิ่มเติม: การทำแผนที่เมตรไปยังสถานที่
 
-* กำหนดค่าเมตร ดูที่ [configuring-meters.md](../getting-started/configuring-the-application/configuring-meters.md "mention")
+* กำหนดค่าเมตร ดู [configuring-meters.md](../getting-started/configuring-the-application/configuring-meters.md "mention")
 * ตั้งค่าการรวมเมตร
-* ตั้งค่าแท็ก, เมตรเสมือน หรือกลุ่มเมตร (ดูที่ [configuring-virtual-meters.md](../getting-started/configuring-the-application/configuring-virtual-meters.md "mention"), [configuring-meter-groups.md](../getting-started/configuring-the-application/configuring-meter-groups.md "mention"), [configuring-tags.md](../getting-started/configuring-the-application/configuring-tags.md "mention"))
+* ตั้งค่าแท็ก, เมตรเสมือนหรือกลุ่มเมตร (ดู [configuring-virtual-meters.md](../getting-started/configuring-the-application/configuring-virtual-meters.md "mention"), [configuring-meter-groups.md](../getting-started/configuring-the-application/configuring-meter-groups.md "mention"), [configuring-tags.md](../getting-started/configuring-the-application/configuring-tags.md "mention"))
 * ทำแผนที่เมตรไปยังสถานที่
 * ตั้งค่าแดชบอร์ดของคุณ
 
@@ -12,11 +12,11 @@
 
 ## ทำไมฉันต้องทำแผนที่เมตรไปยังสถานที่
 
-เมื่อคุณมีเมตรและเมตรย่อย การบริโภคสำหรับสถานที่อาจจะทำให้เกิดความสับสนเนื่องจากยังรวมเมตรย่อย ซึ่งค่าของเมตรย่อยนี้จะถูกนำมาคำนวณในเมตรหลักแล้ว
+เมื่อคุณมีเมตรและเมตรย่อย การบริโภคสำหรับสถานที่อาจจะทำให้สับสนเนื่องจากยังรวมเมตรย่อย ที่ค่าของมันอาจจะถูกนำมาคำนวณในเมตรหลักแล้ว
 
-ยกตัวอย่างเช่น ถ้าเมตรหลักคือแผงกระจายและเมตรย่อยคือเมตรสาธารณูปโภคภายในชั้น แผงกระจายจะรวมการบริโภคของเมตรย่อยแล้ว
+ตัวอย่างเช่น ถ้าเมตรหลักคือแผงกระจายและเมตรย่อยคือเมตรสาธารณูปโภคภายในชั้น แผงกระจายจะรวมการบริโภคของเมตรย่อยแล้ว
 
-ดังนั้นถ้าทั้งสองต่อกับสถานที่เดียวกัน จะทำให้การบริโภคบางส่วนถูกนับซ้ำ
+ดังนั้นถ้าทั้งสองต่อกับสถานที่เดียวกัน มันจะนับการบริโภคบางส่วนสองครั้ง
 
 
 
@@ -25,7 +25,7 @@
 สำหรับทุกสถานที่ที่คุณต้องการติดตามการบริโภคและมีเมตรย่อย คุณสามารถทำเครื่องหมายหนึ่งในเมตรเป็นเมตรหลักสำหรับสถานที่นั้น
 
 {% hint style="info" %}
-เมตรหลักโดยทั่วไปจะเป็นแผงกระจายที่สถานที่นั้น
+เมตรหลักจะเป็นแผงกระจายที่สถานที่นั้นๆ โดยทั่วไป
 {% endhint %}
 
 คุณยังสามารถทำแผนที่เมตรเสมือนหรือกลุ่มเมตร
@@ -34,4 +34,4 @@
 
 
 
-ดูที่ส่วน [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการทำแผนที่เมตรไปยังสถานที่.
+ดูส่วน [marking-the-main-meter.md](../getting-started/configuring-the-application/marking-the-main-meter.md "mention") สำหรับข้อมูลเพิ่มเติมเกี่ยวกับการทำแผนที่เมตรไปยังสถานที่.
