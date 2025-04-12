@@ -1,17 +1,15 @@
-# Configuring Virtual Meters
+# การกำหนดค่ามิเตอร์เสมือน
 
-Virtual meter configuration is just like the physical meter configuration except there is an additional configuration for the formula for the virtual meter.
+การกำหนดค่ามิเตอร์เสมือนเหมือนกับการกำหนดค่ามิเตอร์ทางกายภาพ ยกเว้นว่ามีการกำหนดค่าเพิ่มเติมสำหรับสูตรของมิเตอร์เสมือน
 
+สูตรนี้ถูกกำหนดโดยการเลือกมิเตอร์ทางกายภาพหนึ่งหรือมากกว่า และใช้สเกลปัจจัยกับแต่ละมิเตอร์ (สเกลปัจจัยสามารถเป็นค่าลบหรือเป็นส่วนหนึ่ง)
 
+ดังนั้น หากคุณต้องการกำหนดมิเตอร์เสมือนให้มีผลรวมจากมิเตอร์ A และ B และลบด้วยมิเตอร์ C, คุณจะต้องเพิ่มมิเตอร์และสเกลปัจจัยดังต่อไปนี้:
 
-The formula is defined by selecting one or more physical meters and applying a scaling factor to each meter (the scaling factor can be negative or a fraction).
-
-So if you wish to define a virtual meter as having the total from meter A and B and subtracting meter C, you would add the following meters and scaling factors:
-
-| Meter | Scaling Factor |
+| มิเตอร์ | สเกลปัจจัย |
 | ----- | -------------- |
 | A     | 1              |
 | B     | 1              |
 | C     | -1             |
 
-This would result in the formula `Ax1 + Bx1  + Cx-1`being applied for that virtual meter
+สิ่งนี้จะส่งผลในสูตร `Ax1 + Bx1  + Cx-1` ที่ถูกใช้สำหรับมิเตอร์เสมือนนั้น

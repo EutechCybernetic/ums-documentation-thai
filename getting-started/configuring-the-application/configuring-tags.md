@@ -1,42 +1,39 @@
-# Configuring Tags
+# การกำหนดค่า Tags
 
-Before you can apply tags to meters, virtual meters and groups, you first need to define your tag list.
+ก่อนที่คุณจะสามารถใช้ tags กับเมตร, เมตรเสมือนและกลุ่ม, คุณต้องกำหนดรายการ tag ของคุณก่อน
 
 
 
-## Tag Types
+## ประเภทของ Tags
 
-You start by defining the tag types and then add tags within that tag type.
+คุณเริ่มต้นด้วยการกำหนดประเภทของ tags แล้วเพิ่ม tags ภายในประเภท tag นั้น
 
-Tag types describe the category for tags.
+ประเภทของ tags อธิบายหมวดหมู่สำหรับ tags
 
-Examples: Systems, Tenant, Water Usage
+ตัวอย่าง: ระบบ, ผู้เช่า, การใช้น้ำ
 
-These names are arbitrary and can be decided by you.
+ชื่อเหล่านี้เป็นสิ่งที่คุณสามารถตัดสินใจได้
 
-To start, go to the 'Configuration' section in the sidebar and then click on the 'Tags' tab.
+เพื่อเริ่มต้น, ไปที่ส่วน 'Configuration' ในแถบข้าง แล้วคลิกที่แท็บ 'Tags'
 
-Click on 'Add Tag Type'.
+คลิกที่ 'Add Tag Type'
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure>
 
-You can specify the type name and the initial tag to add for that type.
+คุณสามารถระบุชื่อประเภทและ tag เริ่มต้นที่จะเพิ่มสำหรับประเภทนั้น
 
-Even though its called 'Parent Tag' you can have multiple parent tags. More can be added later.
+แม้ว่าจะเรียกว่า 'Parent Tag' คุณสามารถมีหลาย parent tags สามารถเพิ่มเติมได้ในภายหลัง
 
 
 
 ## Tags
 
-Once you define tag types, under that type, you can define one or more tags for that type.
+เมื่อคุณกำหนดประเภทของ tags, ภายใต้ประเภทนั้น, คุณสามารถกำหนดหนึ่งหรือมากกว่าหนึ่ง tags สำหรับประเภทนั้น
 
-Tags can have a tree structure with sub tags and sub-sub tags and so on, under each tag.
+Tags สามารถมีโครงสร้างเป็นต้นไม้ ด้วย sub tags และ sub-sub tags และอื่น ๆ ภายใต้แต่ละ tag
 
-You can move the mouse over a tag to edit, delete or add sub-tags to it.
+คุณสามารถย้ายเมาส์ไปที่ tag เพื่อแก้ไข, ลบ หรือเพิ่ม sub-tags ให้กับมัน
 
-This screen shows how to use the tag editor.
+หน้าจอนี้แสดงวิธีการใช้ตัวแก้ไข tag
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
-
-
-
