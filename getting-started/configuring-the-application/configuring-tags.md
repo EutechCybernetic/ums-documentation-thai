@@ -1,42 +1,39 @@
-# Configuring Tags
+# การกำหนดค่าแท็ก
 
-Before you can apply tags to meters, virtual meters and groups, you first need to define your tag list.
+ก่อนที่คุณจะสามารถใช้แท็กกับเมตร, เมตรเสมือนและกลุ่ม, คุณต้องกำหนดรายการแท็กของคุณก่อน
 
 
 
-## Tag Types
+## ประเภทแท็ก
 
-You start by defining the tag types and then add tags within that tag type.
+คุณเริ่มต้นด้วยการกำหนดประเภทแท็ก แล้วจึงเพิ่มแท็กภายในประเภทแท็กนั้น
 
-Tag types describe the category for tags.
+ประเภทแท็กอธิบายหมวดหมู่สำหรับแท็ก
 
-Examples: Systems, Tenant, Water Usage
+ตัวอย่าง: ระบบ, ผู้เช่า, การใช้น้ำ
 
-These names are arbitrary and can be decided by you.
+ชื่อเหล่านี้เป็นสิ่งที่คุณสามารถตัดสินใจได้
 
-To start, go to the 'Configuration' section in the sidebar and then click on the 'Tags' tab.
+เพื่อเริ่มต้น, ไปที่ส่วน 'การกำหนดค่า' ในแถบข้าง แล้วคลิกที่แท็บ 'แท็ก'
 
-Click on 'Add Tag Type'.
+คลิกที่ 'เพิ่มประเภทแท็ก'
 
 <figure><img src="../../.gitbook/assets/image (9).png" alt="" width="375"><figcaption></figcaption></figure>
 
-You can specify the type name and the initial tag to add for that type.
+คุณสามารถระบุชื่อประเภทและแท็กเริ่มต้นที่จะเพิ่มสำหรับประเภทนั้น
 
-Even though its called 'Parent Tag' you can have multiple parent tags. More can be added later.
+แม้ว่าจะเรียกว่า 'แท็กหลัก' คุณสามารถมีแท็กหลักหลายตัว สามารถเพิ่มเติมได้ในภายหลัง
 
 
 
-## Tags
+## แท็ก
 
-Once you define tag types, under that type, you can define one or more tags for that type.
+เมื่อคุณกำหนดประเภทแท็กแล้ว, ภายใต้ประเภทนั้น, คุณสามารถกำหนดแท็กหนึ่งหรือมากกว่าสำหรับประเภทนั้น
 
-Tags can have a tree structure with sub tags and sub-sub tags and so on, under each tag.
+แท็กสามารถมีโครงสร้างเป็นต้นไม้ พร้อมแท็กย่อยและแท็กย่อยของแท็กย่อย และอื่น ๆ ภายใต้แท็กแต่ละตัว
 
-You can move the mouse over a tag to edit, delete or add sub-tags to it.
+คุณสามารถย้ายเมาส์ไปที่แท็กเพื่อแก้ไข, ลบ หรือเพิ่มแท็กย่อยให้กับมัน
 
-This screen shows how to use the tag editor.
+หน้าจอนี้แสดงวิธีการใช้ตัวแก้ไขแท็ก
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
-
-
-

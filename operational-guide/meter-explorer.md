@@ -1,42 +1,38 @@
-# Meter Explorer
+# สำรวจเมตร
 
-The meter explorer screen lets you see all your meters/virtual meters/meter groups in one place  and drill down into them for more information. You can easily find meters that are over the normal consumption and analyze them further.
+หน้าจอสำรวจเมตรช่วยให้คุณสามารถดูเมตรทั้งหมด/เมตรเสมือน/กลุ่มเมตรของคุณในที่เดียว และดูรายละเอียดเพิ่มเติม คุณสามารถค้นหาเมตรที่มีการใช้งานเกินปกติและวิเคราะห์เพิ่มเติมได้ง่าย
 
-You can view the consumption trend for meters across the last 24 hours or 30 days and filter down to see only those that have deviated from the target baselines that you have configured.
+คุณสามารถดูแนวโน้มการใช้งานสำหรับเมตรในรอบ 24 ชั่วโมงหรือ 30 วันและกรองเพื่อดูเฉพาะที่ได้รับการบิดเบือนจากเส้นฐานที่คุณกำหนดไว้
 
-
-
-The meter explorer looks like this:
+สำรวจเมตรจะมีลักษณะดังนี้:
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-These are the components of it:
+นี้คือส่วนประกอบของมัน:
 
-1. Switch between meters, virtual meters and meter groups
-2. The consumption/baseline filter - toggle between showing last 24 hours consumption and last 30 days consumption. Also select a baseline and filter by that baseline
-3. The list of the selected meter type. You can click on the name to drill down and view details about that specific meter
-4. Number of meters to show in one page of results
-5. Pagination: Go  to the next/previous set of results (if any)&#x20;
-6. The consumption spark line - showing the relative trend in consumption for that meter. It would either show the last 24 hours of consumption or last 30 days of consumption depending on what was selected in the baseline filter
+1. เปลี่ยนระหว่างเมตร, เมตรเสมือนและกลุ่มเมตร
+2. ตัวกรองการใช้งาน/เส้นฐาน - เปลี่ยนระหว่างการแสดงการใช้งาน 24 ชั่วโมงล่าสุดและการใช้งาน 30 วันล่าสุด นอกจากนี้ยังเลือกเส้นฐานและกรองตามเส้นฐานนั้น
+3. รายการของประเภทเมตรที่เลือก คุณสามารถคลิกที่ชื่อเพื่อดูรายละเอียดเกี่ยวกับเมตรเฉพาะนั้น
+4. จำนวนเมตรที่จะแสดงในหนึ่งหน้าผลลัพธ์
+5. การแบ่งหน้า: ไปยังชุดผลลัพธ์ถัดไป/ก่อนหน้า (ถ้ามี)
+6. แถบแสดงแนวโน้มการใช้งาน - แสดงแนวโน้มการใช้งานสัมพันธ์สำหรับเมตรนั้น มันจะแสดงการใช้งาน 24 ชั่วโมงล่าสุดหรือการใช้งาน 30 วันล่าสุดขึ้นอยู่กับสิ่งที่เลือกในตัวกรองเส้นฐาน
 
+## ตัวกรองเส้นฐาน
 
-
-## Baseline Filter
-
-The baseline filter panel looks like this:
+แผงตัวกรองเส้นฐานมีลักษณะดังนี้:
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-In the panel, you can toggle between showing 24hrs and 30 days consumption.
+ในแผง, คุณสามารถสลับระหว่างการแสดงการใช้งาน 24 ชั่วโมงและ 30 วัน
 
-You can also choose any pre-configured baseline. When a baseline is selected, the consumption trend will show bars in red where the consumption has gone over the baseline for that meter.
+คุณยังสามารถเลือกเส้นฐานที่กำหนดไว้ล่วงหน้า หากเลือกเส้นฐาน, แนวโน้มการใช้งานจะแสดงแถบสีแดงที่การใช้งานเกินเส้นฐานสำหรับเมตรนั้น
 
 {% hint style="info" %}
-You need to configure baselines for each meter as the target consumption level for each meter can be different. If no baseline is configured for that meter, then there is no highlighting of consumption values in red.
+คุณต้องกำหนดเส้นฐานสำหรับแต่ละเมตรเนื่องจากระดับการใช้งานเป้าหมายสำหรับแต่ละเมตรอาจต่างกัน หากไม่มีการกำหนดเส้นฐานสำหรับเมตรนั้น, จะไม่มีการเน้นค่าการใช้งานด้วยสีแดง
 {% endhint %}
 
-You can also select to filter the list to show only meters that have deviations from the baseline.
+คุณยังสามารถเลือกกรองรายการเพื่อแสดงเฉพาะเมตรที่มีการบิดเบือนจากเส้นฐาน
 
-This lets you quickly dive into problematic items.
+สิ่งนี้ช่วยให้คุณสามารถดำเนินการด้วยรายการที่มีปัญหาได้อย่างรวดเร็ว
 
-When you click on a meter you are taken to the [consumption-analysis-tool.md](consumption-analysis-tool.md "mention")
+เมื่อคุณคลิกที่เมตร คุณจะถูกนำไปยัง [consumption-analysis-tool.md](consumption-analysis-tool.md "mention")
