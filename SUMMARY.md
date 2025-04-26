@@ -16,7 +16,7 @@
 * [การเริ่มต้น](getting-started/README.md)
   * [การเข้าใจหน้าตาผู้ใช้](getting-started/understanding-the-user-interface/README.md)
     * [แดชบอร์ด](getting-started/understanding-the-user-interface/dashboards.md)
-    * [การตั้งค่า](getting-started/understanding-the-user-interface/configuration.md)
+    * [การกำหนดค่า](getting-started/understanding-the-user-interface/configuration.md)
   * [การกำหนดค่าแอปพลิเคชัน](getting-started/configuring-the-application/README.md)
     * [การกำหนดค่าประเภทยูทิลิตี้](getting-started/configuring-the-application/configuring-utility-types.md)
     * [การกำหนดค่ามิเตอร์](getting-started/configuring-the-application/configuring-meters.md)
