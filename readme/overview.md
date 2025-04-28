@@ -1,9 +1,9 @@
-# ภาพรวม
+# Overview
 
-แอปพลิเคชัน UMS สามารถจัดการกับหลายประเภทของสาธารณูปโภคตามที่กล่าวไว้ในส่วนก่อนหน้านี้
+The UMS application can manage multiple types of utilities as mentioned in the previous section.
 
-ข้อมูลการใช้งาน - รวมถึงการอ่านมิเตอร์ - สามารถป้อนเข้าสู่ระบบได้ผ่านทาง API หรือ Mqtt การรวมตัวอื่น ๆ ก็สามารถใช้สำหรับการรับข้อมูล โดยใช้ Lucy คุณสามารถอ่านข้อมูลการใช้งานจาก PDF และภาพของใบแจ้งหนี้และป้อนเข้าสู่แอปพลิเคชันได้ด้วย
+Consumption data - including meter readings - can be fed into the system either via API or Mqtt. Other integrations are also available for ingesting data. Using Lucy, its possible to read consumption data from invoice PDFs and images and feed them into the application as well.
 
-เมื่อข้อมูลถูกนำเข้า แอปพลิเคชันจะคำนวณและจัดเก็บข้อมูลการใช้งานและเมตริกอื่น ๆ โดยใช้การแทรกซ้อนที่จำเป็น
+Once data is ingested, the application will calculate and store consumption data and other metrics, using interpolation where required.
 
-คุณจึงสามารถติดตามข้อมูลการใช้งานในหลายมิติ รวมถึงช่วงวันที่ แท็ก และเส้นฐาน
+You can then track consumption data across many dimensions including date ranges, tags, and base lines.
