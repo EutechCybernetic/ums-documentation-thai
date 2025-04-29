@@ -1,12 +1,11 @@
-# Locations
+# ตำแหน่งที่ตั้ง
 
-The UMS application makes use of iviva's standard location hierarchy.
+แอปพลิเคชัน UMS ใช้ลำดับตำแหน่งที่ตั้งมาตรฐานของ iviva
 
-The full location tree that you configure within the iviva app is available in UMS.
+ต้นไม้ตำแหน่งที่ตั้งทั้งหมดที่คุณกำหนดในแอป iviva สามารถใช้ได้ใน UMS
 
 
 
-You can attach meters, virtual meters and meter groups to locations. You can also configure extra properties for each location.
+คุณสามารถแนบมิเตอร์, มิเตอร์เสมือน และกลุ่มมิเตอร์ไปยังตำแหน่งที่ตั้ง คุณยังสามารถกำหนดคุณสมบัติเพิ่มเติมสำหรับแต่ละตำแหน่งที่ตั้ง
 
-From a user interface standpoint, locations are shown as a separate entity but are internally treated as tags. However they are special in that you do not have to create the tags manually. They are synced from the iviva's Location application.
-
+จากมุมมองของส่วนต่อประสานผู้ใช้, ตำแหน่งที่ตั้งจะแสดงเป็นเอนทิตี้แยกต่างหาก แต่จะถูกจัดการภายในเป็นแท็ก อย่างไรก็ตาม พวกเขาเป็นพิเศษในทางที่คุณไม่จำเป็นต้องสร้างแท็กด้วยตนเอง พวกเขาจะถูกซิงค์จากแอปพลิเคชันตำแหน่งที่ตั้งของ iviva

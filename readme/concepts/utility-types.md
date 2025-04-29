@@ -1,39 +1,37 @@
-# Utility Types
+# ประเภทยูทิลิตี้
 
+ประเภทยูทิลิตี้กำหนดประเภทของยูทิลิตี้ที่คุณต้องการวัดและวิเคราะห์ ซึ่งโดยทั่วไปจะเป็น:
 
+* ไฟฟ้า
+* น้ำ
+* ก๊าซ
+* น้ำเย็น
+* ขยะ ฯลฯ...
 
-Utility types define the kinds of utilties you want to measure and analyize. These are typically:
+คุณสามารถเพิ่มประเภทยูทิลิตี้เหล่านี้ลงในระบบ แต่ละประเภทยูทิลิตี้สามารถวัดได้ในหน่วยที่แตกต่างกัน คุณสามารถกำหนดหน่วยที่แตกต่างกันสำหรับแต่ละประเภทยูทิลิตี้ ตัวอย่างเช่น ไฟฟ้าสามารถบันทึกได้ในหน่วย kWh หรือ mWh หรือ BTU
 
-* Electricity
-* Water
-* Gas
-* Chilled Water
-* Waste etc...
+#### หน่วย
 
-You can add these utility types into the system. Each utility type can be measured in different units. You can configure different units for each utility type. For example, electricity can be recorded in kWh or mWh or BTU.
+ภายในแต่ละประเภทยูทิลิตี้ คุณจำเป็นต้องกำหนดหน่วยที่เป็นไปได้ที่สามารถวัดได้ สำหรับแต่ละหน่วย - คุณต้องให้ชื่อและปัจจัยการแปลง ปัจจัยการแปลงคือตัวคูณเพื่อแปลงหน่วยนั้นเป็นหน่วยฐาน
 
-#### Units
+คุณสามารถกำหนดหน่วยฐานโดยการให้ปัจจัยการแปลงเป็นหนึ่ง
 
-Within each utility type, you need to define the possible units they can be measured in. For each unit - you need to give a name and a conversion factor. The conversion factor is a multiplier to convert that unit to the base unit.
+ตัวอย่างเช่น หากคุณเก็บปริมาณน้ำ คุณอาจต้องการกำหนดหน่วยต่อไปนี้:
 
-You can define a base unit by giving the conversion factor as one.
+* ลิตร
+* แกลลอนสหรัฐ
+* แกลลอนอิมพีเรียล
 
-For example, if you are storing water volumes, you may want to configure the following units:
+หากเราเลือกลิตรเป็นหน่วยฐาน แล้วปัจจัยการแปลงต่อไปนี้สามารถใช้ได้:
 
-* litres
-* US gallons
-* Imperial gallons
+* ลิตร - 1
+* แกลลอนสหรัฐ - 3.785
+* แกลลอนอิมพีเรียล - 4.546
 
-If we choose litres is the base unit, then the following conversion factors can be used:
+หากเราต้องการเลือกแกลลอนสหรัฐเป็นหน่วยฐาน ปัจจัยการแปลงต่อไปนี้สามารถใช้ได้:
 
-* litres - 1
-* US gallons - 3.785
-* Imperial Gallons - 4.546
-
-If we wanted to choose US Gallons as the base unit, the following conversion factors can be used:
-
-* litres - 0.2642 (1/3.785)
-* US Gallons - 1
-* Imperial Gallons - 1.20095
+* ลิตร - 0.2642 (1/3.785)
+* แกลลอนสหรัฐ - 1
+* แกลลอนอิมพีเรียล - 1.20095
 
 ###

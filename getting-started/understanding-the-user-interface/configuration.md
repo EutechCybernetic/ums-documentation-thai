@@ -1,3 +1,3 @@
-# Configuration
+# การตั้งค่า
 
-Please see the next section on Application Configuration to see how to use the configuration section.
+กรุณาดูในส่วนถัดไปเกี่ยวกับการตั้งค่าแอปพลิเคชันเพื่อดูวิธีการใช้ส่วนการตั้งค่า.
